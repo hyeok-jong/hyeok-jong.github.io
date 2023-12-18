@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Bases on Hi there</title>
+    <link>https://hyeok-jong.github.io/base/</link>
+    <description>Recent content in Bases on Hi there</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/base/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contacts</title>
+      <link>https://hyeok-jong.github.io/base/contacts/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/base/contacts/</guid>
+      <description> Phone Email QR supported by goqr </description>
+    </item>
+    
+    <item>
+      <title>CV</title>
+      <link>https://hyeok-jong.github.io/base/cv/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/base/cv/</guid>
+      <description>curriculum vitae will be posted soon.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hyeok-jong.github.io/base/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/base/links/</guid>
+      <description> Links my SNU SNU Medicine SNU Biomedical UoS Portal Github Velog Musics </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hyeok-jong.github.io/base/news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/base/news/</guid>
+      <description>last update : 2023. 11. 29 Starts graduate school
+2023. 09. 01
+Combined Master&#39;s and Doctoral program at Seoul National University. Internship at Seoul National University.
+2022. 07. 01 ~ 2023. 08. 31
+Completed a one-year medical artificial intelligence research internship at Seoul National University. Eventually enrolled in an integrated Master&#39;s and Doctoral program. Bachelor&#39;s degree graduation.
+2017. 03. 01 ~ 2023. 08. 22
+Received a Bachelor&#39;s degree in Mathematics and Statistics through a double major at University of Seoul.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>test on Hi there</title>
+    <link>https://hyeok-jong.github.io/tags/test/</link>
+    <description>Recent content in test on Hi there</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 06 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to set mac</title>
+      <link>https://hyeok-jong.github.io/posts/how2setmac/</link>
+      <pubDate>Wed, 06 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/how2setmac/</guid>
+      <description>I&amp;rsquo;m using macbook and mac-mini.
+To remember what setting I used, I write some my default setting.
+No migration.
+Only Apple ID login.
+0. Initial setting. Language : English Location : Korea No Migration Assistant Connect wifi and login with apple ID
+1. Trackpad Silent clicking : on
+Tap to click : on
+2. Dock Position : Left Delete all items (Remove from Dock)
+Turn Hiding Off
+3. iCloud Nothing.</description>
+    </item>
+    
+  </channel>
+</rss>
