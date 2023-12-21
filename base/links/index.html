@@ -210,6 +210,12 @@
 <html>
 <head>
     <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto; /* 2 columns */
+            grid-gap: 20px; /* Spacing between buttons */
+            padding: 20px;
+        }
         .button {
             display: inline-block;
             border-radius: 8px;
@@ -266,14 +272,16 @@
 <body>
 
     <h2>Links</h2>
-    <button class="button color1" onclick="window.location.href='https://my.snu.ac.kr';"><span>my SNU</span></button>
-    <button class="button color2" onclick="window.location.href='https://medicine.snu.ac.kr';"><span>SNU Medicine</span></button>
-    <button class="button color3" onclick="window.location.href='https://biomed.snu.ac.kr/';"><span>SNU Biomedical</span></button>
-    <button class="button color4" onclick="window.location.href='https://portal.uos.ac.kr/user/login.face';"><span>UoS Portal</span></button>
-    <button class="button color5" onclick="window.location.href='https://github.com/hyeok-jong?tab=repositories';"><span>Github</span></button>
-    <button class="button color6" onclick="window.location.href='https://velog.io/@jj770206/series';"><span>Velog</span></button>
-    <button class="button color7" onclick="window.location.href='https://hyeok-jong.github.io/posts/etc/youtube/';"><span>Musics</span></button>
-
+    <div class = 'grid-container'>
+        <button class="button color1" onclick="window.location.href='https://my.snu.ac.kr';"><span>my SNU</span></button>
+        <button class="button color2" onclick="window.location.href='https://medicine.snu.ac.kr';"><span>SNU Medicine</span></button>
+        <button class="button color3" onclick="window.location.href='https://biomed.snu.ac.kr/';"><span>SNU Biomedical</span></button>
+        <button class="button color4" onclick="window.location.href='https://portal.uos.ac.kr/user/login.face';"><span>UoS Portal</span></button>
+        <button class="button color5" onclick="window.location.href='https://github.com/hyeok-jong?tab=repositories';"><span>Github</span></button>
+        <button class="button color6" onclick="window.location.href='https://velog.io/@jj770206/series';"><span>Velog</span></button>
+        <button class="button color7" onclick="window.location.href='https://hyeok-jong.github.io/posts/etc/youtube/';"><span>Musics</span></button>
+    </div>
+    
 
 </body>
 
