@@ -6,7 +6,20 @@
     <description>Recent content in Posts on Hi there</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Schedule Management</title>
+      <link>https://hyeok-jong.github.io/posts/etc/blog/</link>
+      <pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/etc/blog/</guid>
+      <description>Need three things.
+Schedule mangement Like calendar Alert function To do management check up style easy to see all lists Daily summary easy to find by keyword And most important thing : Easy to access and edit in macbook, ipad, and iphone.
+To do so,
+Apple calendar and 3. Notion
+is the best combination. I used to work with notability or goodnotes, but the app is best option for only ipad.</description>
+    </item>
+    
     <item>
       <title>계약</title>
       <link>https://hyeok-jong.github.io/posts/estate/</link>
@@ -66,15 +79,6 @@ Turn Hiding Off
       <description>1 . Hypothesis test What is sampling and distribution of sample mean
 Distribution of sample variance and chi-squared, t and F distribution
 P-value</description>
-    </item>
-    
-    <item>
-      <title>Apple environment</title>
-      <link>https://hyeok-jong.github.io/posts/etc/blog/</link>
-      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://hyeok-jong.github.io/posts/etc/blog/</guid>
-      <description>UPDF</description>
     </item>
     
     <item>

@@ -144,7 +144,7 @@
                         const dayOfWeek = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(now);
                         const date = now.toISOString().split('T')[0]; 
                         const time = now.toTimeString().split(' ')[0]; 
-                        currentTimeElement.textContent = `DATE : ${date}, ${dayOfWeek}  | TIME : ${time}`;
+                        currentTimeElement.textContent = `${date}, ${dayOfWeek} ${time}`;
                     };
                     setInterval(updateTime, 1000);
                     updateTime(); 

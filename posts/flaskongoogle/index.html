@@ -194,7 +194,7 @@ Cloud Storage -&gt; Buckets"/>
                         const dayOfWeek = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(now);
                         const date = now.toISOString().split('T')[0]; 
                         const time = now.toTimeString().split(' ')[0]; 
-                        currentTimeElement.textContent = `DATE : ${date}, ${dayOfWeek}  | TIME : ${time}`;
+                        currentTimeElement.textContent = `${date}, ${dayOfWeek} ${time}`;
                     };
                     setInterval(updateTime, 1000);
                     updateTime(); 
@@ -213,6 +213,13 @@ Cloud Storage -&gt; Buckets"/>
     <h1 class="post-title">
       Flask on google
     </h1>
+    <ul class="post-tags">
+      <li><a href="https://hyeok-jong.github.io/tags/flase/">Flase</a></li>
+    </ul>
+      <li><a href="https://hyeok-jong.github.io/tags/google/">Google</a></li>
+    </ul>
+      <li><a href="https://hyeok-jong.github.io/tags/google-cloud/">Google Cloud</a></li>
+    </ul>
     <div class="post-meta"><span title='2023-12-06 00:00:00 +0000 UTC'>December 6, 2023</span>
 
 </div>
@@ -230,11 +237,6 @@ Cloud Storage -&gt; Buckets</p>
   </div>
 
   <footer class="post-footer">
-    <ul class="post-tags">
-      <li><a href="https://hyeok-jong.github.io/tags/flase/">Flase</a></li>
-      <li><a href="https://hyeok-jong.github.io/tags/google/">Google</a></li>
-      <li><a href="https://hyeok-jong.github.io/tags/google-cloud/">Google Cloud</a></li>
-    </ul>
   </footer>
 </article>
     </main>

@@ -209,7 +209,7 @@ Turn Hiding Off
                         const dayOfWeek = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(now);
                         const date = now.toISOString().split('T')[0]; 
                         const time = now.toTimeString().split(' ')[0]; 
-                        currentTimeElement.textContent = `DATE : ${date}, ${dayOfWeek}  | TIME : ${time}`;
+                        currentTimeElement.textContent = `${date}, ${dayOfWeek} ${time}`;
                     };
                     setInterval(updateTime, 1000);
                     updateTime(); 
@@ -228,6 +228,11 @@ Turn Hiding Off
     <h1 class="post-title">
       How to set mac
     </h1>
+    <ul class="post-tags">
+      <li><a href="https://hyeok-jong.github.io/tags/test/">test</a></li>
+    </ul>
+      <li><a href="https://hyeok-jong.github.io/tags/test1/">test1</a></li>
+    </ul>
     <div class="post-meta"><span title='2023-12-06 00:00:00 +0000 UTC'>December 6, 2023</span>
 
 </div>
@@ -327,10 +332,6 @@ language reactor</p>
   </div>
 
   <footer class="post-footer">
-    <ul class="post-tags">
-      <li><a href="https://hyeok-jong.github.io/tags/test/">test</a></li>
-      <li><a href="https://hyeok-jong.github.io/tags/test1/">test1</a></li>
-    </ul>
   </footer>
 </article>
     </main>

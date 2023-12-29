@@ -185,7 +185,7 @@
                         const dayOfWeek = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(now);
                         const date = now.toISOString().split('T')[0]; 
                         const time = now.toTimeString().split(' ')[0]; 
-                        currentTimeElement.textContent = `DATE : ${date}, ${dayOfWeek}  | TIME : ${time}`;
+                        currentTimeElement.textContent = `${date}, ${dayOfWeek} ${time}`;
                     };
                     setInterval(updateTime, 1000);
                     updateTime(); 
@@ -204,6 +204,7 @@
     <h1 class="post-title">
       계약
     </h1>
+    <ul class="post-tags">
     <div class="post-meta"><span title='2023-12-20 00:00:00 +0000 UTC'>December 20, 2023</span>
 
 </div>
@@ -370,8 +371,6 @@
   </div>
 
   <footer class="post-footer">
-    <ul class="post-tags">
-    </ul>
   </footer>
 </article>
     </main>
