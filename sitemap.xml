@@ -3,7 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://hyeok-jong.github.io/posts/</loc>
-    <lastmod>2023-12-20T00:00:00+00:00</lastmod>
+    <lastmod>2023-12-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hyeok-jong.github.io/tags/schedule/</loc>
+    <lastmod>2023-12-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hyeok-jong.github.io/posts/etc/blog/</loc>
+    <lastmod>2023-12-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hyeok-jong.github.io/tags/</loc>
+    <lastmod>2023-12-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hyeok-jong.github.io/posts/estate/</loc>
     <lastmod>2023-12-20T00:00:00+00:00</lastmod>
@@ -35,9 +44,6 @@
     <loc>https://hyeok-jong.github.io/posts/how2setmac/</loc>
     <lastmod>2023-12-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hyeok-jong.github.io/tags/</loc>
-    <lastmod>2023-12-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hyeok-jong.github.io/tags/tessdaft3/</loc>
     <lastmod>2023-12-06T00:00:00+00:00</lastmod>
   </url><url>
@@ -49,9 +55,6 @@
   </url><url>
     <loc>https://hyeok-jong.github.io/posts/lectures/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hyeok-jong.github.io/posts/etc/blog/</loc>
-    <lastmod>2023-08-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hyeok-jong.github.io/posts/pytorch_modulelist_sequential/</loc>
     <lastmod>2023-08-14T00:00:00+00:00</lastmod>
