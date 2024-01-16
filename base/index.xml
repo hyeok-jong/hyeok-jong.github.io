@@ -6,7 +6,16 @@
     <description>Recent content in Bases on Hi there</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/base/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/base/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Current Time</title>
+      <link>https://hyeok-jong.github.io/base/clock/</link>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/base/clock/</guid>
+      <description> &lt;!DOCTYPE html&gt; Elegant Clock with Date </description>
+    </item>
+    
     <item>
       <title>Contacts</title>
       <link>https://hyeok-jong.github.io/base/contacts/</link>
