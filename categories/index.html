@@ -121,21 +121,25 @@
         <ul id="menu">
         </ul>
         <div class="current-time" style="font-size: 16px;">
-            <script>
-                document.addEventListener('DOMContentLoaded', (event) => {
-                    const currentTimeElement = document.querySelector('.current-time');
-                    const updateTime = () => {
-                        const now = new Date();
-                        const dayOfWeek = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(now);
-                        const date = now.toISOString().split('T')[0]; 
-                        const time = now.toTimeString().split(' ')[0]; 
-                        currentTimeElement.textContent = `${date}, ${dayOfWeek} ${time}`;
-                    };
-                    setInterval(updateTime, 1000);
-                    updateTime(); 
-                });
-            </script>
+            <a href="https://hyeok-jong.github.io/base/clock/" style="color: inherit; text-decoration: none;" id="time-link">
+                
+            </a>
         </div>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                const currentTimeElement = document.querySelector('#time-link'); 
+                const updateTime = () => {
+                    const now = new Date();
+                    const dayOfWeek = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(now);
+                    const date = now.toISOString().split('T')[0]; 
+                    const time = now.toTimeString().split(' ')[0]; 
+                    currentTimeElement.textContent = `${date}, ${dayOfWeek} ${time}`;
+                };
+                setInterval(updateTime, 1000);
+                updateTime(); 
+            });
+        </script>
     
     </nav>
 

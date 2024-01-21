@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Current Time | Hi there</title>
 <meta name="keywords" content="">
-<meta name="description" content=" &lt;!DOCTYPE html&gt; Elegant Clock with Date ">
+<meta name="description" content=" &lt;!DOCTYPE html&gt; Digital Clock ">
 <meta name="author" content="">
 <link rel="canonical" href="https://hyeok-jong.github.io/base/clock/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.870dbc54628dda496660bde2400f60a8780d95deee9d875504f621a18f074418.css" integrity="sha256-hw28VGKN2klmYL3iQA9gqHgNld7unYdVBPYhoY8HRBg=" rel="preload stylesheet" as="style">
@@ -57,7 +57,7 @@
 
     </style>
 </noscript><meta property="og:title" content="Current Time" />
-<meta property="og:description" content=" &lt;!DOCTYPE html&gt; Elegant Clock with Date " />
+<meta property="og:description" content=" &lt;!DOCTYPE html&gt; Digital Clock " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://hyeok-jong.github.io/base/clock/" /><meta property="article:section" content="base" />
 <meta property="article:published_time" content="2024-01-16T00:00:00+00:00" />
@@ -65,7 +65,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Current Time"/>
-<meta name="twitter:description" content=" &lt;!DOCTYPE html&gt; Elegant Clock with Date "/>
+<meta name="twitter:description" content=" &lt;!DOCTYPE html&gt; Digital Clock "/>
 
 
 <script type="application/ld+json">
@@ -94,12 +94,12 @@
   "@type": "BlogPosting",
   "headline": "Current Time",
   "name": "Current Time",
-  "description": " \u003c!DOCTYPE html\u003e Elegant Clock with Date ",
+  "description": " \u003c!DOCTYPE html\u003e Digital Clock ",
   "keywords": [
     
   ],
-  "articleBody": " \u003c!DOCTYPE html\u003e Elegant Clock with Date ",
-  "wordCount" : "6",
+  "articleBody": " \u003c!DOCTYPE html\u003e Digital Clock ",
+  "wordCount" : "4",
   "inLanguage": "en",
   "datePublished": "2024-01-16T00:00:00Z",
   "dateModified": "2024-01-16T00:00:00Z",
@@ -174,21 +174,25 @@
         <ul id="menu">
         </ul>
         <div class="current-time" style="font-size: 16px;">
-            <script>
-                document.addEventListener('DOMContentLoaded', (event) => {
-                    const currentTimeElement = document.querySelector('.current-time');
-                    const updateTime = () => {
-                        const now = new Date();
-                        const dayOfWeek = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(now);
-                        const date = now.toISOString().split('T')[0]; 
-                        const time = now.toTimeString().split(' ')[0]; 
-                        currentTimeElement.textContent = `${date}, ${dayOfWeek} ${time}`;
-                    };
-                    setInterval(updateTime, 1000);
-                    updateTime(); 
-                });
-            </script>
+            <a href="https://hyeok-jong.github.io/base/clock/" style="color: inherit; text-decoration: none;" id="time-link">
+                
+            </a>
         </div>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                const currentTimeElement = document.querySelector('#time-link'); 
+                const updateTime = () => {
+                    const now = new Date();
+                    const dayOfWeek = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(now);
+                    const date = now.toISOString().split('T')[0]; 
+                    const time = now.toTimeString().split(' ')[0]; 
+                    currentTimeElement.textContent = `${date}, ${dayOfWeek} ${time}`;
+                };
+                setInterval(updateTime, 1000);
+                updateTime(); 
+            });
+        </script>
     
     </nav>
 
@@ -209,92 +213,141 @@
   </header> 
   <div class="post-content" >
 
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elegant Clock with Date</title>
+    <title>Digital Clock</title>
     <style>
-        .clock {
-            position: relative;
-            width: 300px;
-            height: 300px;
-            border: 16px solid #8E44AD; /* Dark purple border */
-            border-radius: 50%;
-            margin: 50px auto;
-            background: radial-gradient(circle, #f1f1f1 40%, #e2e2e2);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        body {
+            background: #0f3854;
+            background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
         }
-
-        .hand {
-            position: absolute;
-            bottom: 50%;
-            left: 50%;
-            transform-origin: bottom;
-            background-color: #333;
-        }
-
-        .hour {
-            width: 8px;
-            height: 60px;
-            border-radius: 6px;
-        }
-
-        .minute {
-            width: 6px;
-            height: 80px;
-            border-radius: 4px;
-        }
-
-        .second {
-            width: 2px;
-            height: 100px;
-            background-color: #e74c3c; /* Red color for seconds hand */
-        }
-
-        .date {
-            position: absolute;
-            width: 100%;
+        #clock {
+            font-family: 'Share Tech Mono', monospace;
+            color: #daf6ff;
             text-align: center;
-            bottom: 20px;
-            font-family: Arial, sans-serif;
-            font-size: 18px;
-            color: #333;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
+        .time {
+            letter-spacing: 0.05em;
+            font-size: 80px;
+            padding: 5px 0;
+            animation: glow 1s infinite alternate;
+            text-shadow: 0 0 20px rgba(10, 175, 230, 0.75);
+        }
+    
+        .date {
+            letter-spacing: 0.05em;
+            font-size: 40px;
+            padding: 5px 0;
+            animation: glow 1s infinite alternate;
+            text-shadow: 0 0 20px rgba(10, 175, 230, 0.75);
+        }
+        .text {
+            letter-spacing: 0.1em;
+            font-size: 12px;
+            padding: 20px 0 0;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(10, 175, 230, 0.5), 0 0 20px rgba(10, 175, 230, 0.5), 0 0 30px rgba(10, 175, 230, 0.5);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 30px rgba(10, 175, 230, 1), 0 0 40px rgba(10, 175, 230, 1);
+            }
+        }
+
+        @keyframes fadeIn {
+            50% { opacity: 1; }
+            50% { opacity: 1; }
+        }
+
+
+
     </style>
 </head>
 <body>
-    <div class="clock">
-        <div class="hand hour" id="hour-hand"></div>
-        <div class="hand minute" id="minute-hand"></div>
-        <div class="hand second" id="second-hand"></div>
-        <div class="date" id="current-date"></div>
+    <div id="clock">
+        <p class="date" id="date"></p>
+        <p class="time" id="time"></p>
     </div>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
     <script>
-        function updateClock() {
-            const now = new Date();
-            const hours = now.getHours();
-            const minutes = now.getMinutes();
-            const seconds = now.getSeconds();
-
-            const hoursDegree = ((hours / 12) * 360) + ((minutes / 60) * 30) + 90;
-            const minutesDegree = ((minutes / 60) * 360) + ((seconds / 60) * 6) + 90;
-            const secondsDegree = ((seconds / 60) * 360) + 90;
-
-            document.getElementById('hour-hand').style.transform = `rotate(${hoursDegree}deg)`;
-            document.getElementById('minute-hand').style.transform = `rotate(${minutesDegree}deg)`;
-            document.getElementById('second-hand').style.transform = `rotate(${secondsDegree}deg)`;
-
-            // Update date
-            const date = now.toISOString().split('T')[0];
-            document.getElementById('current-date').textContent = date;
+        function fireConfetti() {
+            var duration = 15 * 1000;
+            var animationEnd = Date.now() + duration;
+            var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+    
+            function randomConfetti() {
+                return {
+                    ...defaults,
+                    particleCount: Math.random() * 100 + 50,
+                    origin: { x: Math.random(), y: Math.random() - 0.1 },
+                    angle: Math.random() * 360,
+                    startVelocity: 30 + Math.random() * 20,
+                    scalar: Math.random() + 0.5
+                };
+            }
+    
+            var interval = setInterval(function() {
+                var timeLeft = animationEnd - Date.now();
+                if (timeLeft <= 0) {
+                    return clearInterval(interval);
+                }
+                confetti(randomConfetti());
+            }, 250);
         }
-
-        setInterval(updateClock, 1000);
-        updateClock(); // Initialize the clock
+    
+        // Start the fireworks effect when the page loads
+        window.onload = fireConfetti;
+        function updateTime() {
+            var now = new Date();
+    
+            // Extract each part of the date
+            var year = now.getFullYear();
+            var month = now.toLocaleString('en-US', { month: 'long' });
+            var dayOfWeek = now.toLocaleString('en-US', { weekday: 'long' });
+            var dayOfMonth = now.getDate();
+    
+            // Format the time part
+            var hours = zeroPad(now.getHours());
+            var minutes = zeroPad(now.getMinutes());
+            var seconds = zeroPad(now.getSeconds());
+            var timeString = hours + ':' + minutes + ':' + seconds;
+    
+            // Construct the date string with line breaks
+            var dateString = `${dayOfWeek}<br>${month}<br>${dayOfMonth}<br>${year}`;
+    
+            // Update the DOM elements using innerHTML to parse the <br> tags
+            document.getElementById('date').innerHTML = dateString;
+            document.getElementById('time').textContent = timeString;
+        }
+    
+        function zeroPad(value) {
+            return value.toString().padStart(2, '0');
+        }
+    
+        // Update the time every second
+        setInterval(updateTime, 1000);
+    
+        // Initialize the clock
+        updateTime();
     </script>
+    
+    
 </body>
 </html>
 

@@ -174,21 +174,25 @@
         <ul id="menu">
         </ul>
         <div class="current-time" style="font-size: 16px;">
-            <script>
-                document.addEventListener('DOMContentLoaded', (event) => {
-                    const currentTimeElement = document.querySelector('.current-time');
-                    const updateTime = () => {
-                        const now = new Date();
-                        const dayOfWeek = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(now);
-                        const date = now.toISOString().split('T')[0]; 
-                        const time = now.toTimeString().split(' ')[0]; 
-                        currentTimeElement.textContent = `${date}, ${dayOfWeek} ${time}`;
-                    };
-                    setInterval(updateTime, 1000);
-                    updateTime(); 
-                });
-            </script>
+            <a href="https://hyeok-jong.github.io/base/clock/" style="color: inherit; text-decoration: none;" id="time-link">
+                
+            </a>
         </div>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                const currentTimeElement = document.querySelector('#time-link'); 
+                const updateTime = () => {
+                    const now = new Date();
+                    const dayOfWeek = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(now);
+                    const date = now.toISOString().split('T')[0]; 
+                    const time = now.toTimeString().split(' ')[0]; 
+                    currentTimeElement.textContent = `${date}, ${dayOfWeek} ${time}`;
+                };
+                setInterval(updateTime, 1000);
+                updateTime(); 
+            });
+        </script>
     
     </nav>
 
@@ -281,7 +285,7 @@
         <button class="button color4" onclick="window.location.href='https://portal.uos.ac.kr/user/login.face';"><span>UoS Portal</span></button>
         <button class="button color5" onclick="window.location.href='https://github.com/hyeok-jong?tab=repositories';"><span>Github</span></button>
         <button class="button color6" onclick="window.location.href='https://velog.io/@jj770206/series';"><span>Velog</span></button>
-        <button class="button color7" onclick="window.location.href='https://hyeok-jong.github.io/posts/etc/youtube/';"><span>Musics</span></button>
+        <button class="button color7" onclick="window.location.href='https://hyeok-jong.github.io/posts/life/youtube/';"><span>Musics</span></button>
     </div>
     
 
