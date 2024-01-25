@@ -8,6 +8,15 @@
     <language>en</language>
     <lastBuildDate>Mon, 10 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Calendar</title>
+      <link>https://hyeok-jong.github.io/base/calendar/</link>
+      <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/base/calendar/</guid>
+      <description> calendar goqr https://apple.stackexchange.com/questions/444779/is-it-possible-to-host-my-public-apple-calendar-on-my-website &gt; </description>
+    </item>
+    
+    <item>
       <title>Notion</title>
       <link>https://hyeok-jong.github.io/posts/life/notion/</link>
       <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
@@ -125,7 +134,7 @@ Gregorian Chants</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://hyeok-jong.github.io/base/links/</guid>
-      <description> Links my SNU SNU Medicine SNU Biomedical UoS Portal Github Velog Musics </description>
+      <description> Links my SNU SNU Medicine SNU Biomedical UoS Portal Github Velog Musics Calendar </description>
     </item>
     
     <item>

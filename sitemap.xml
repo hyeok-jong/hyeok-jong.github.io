@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hyeok-jong.github.io/base/</loc>
+    <lastmod>2024-01-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hyeok-jong.github.io/base/calendar/</loc>
+    <lastmod>2024-01-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://hyeok-jong.github.io/tags/life/</loc>
     <lastmod>2024-01-21T00:00:00+00:00</lastmod>
   </url><url>
@@ -19,9 +25,6 @@
   </url><url>
     <loc>https://hyeok-jong.github.io/posts/life/clickup/</loc>
     <lastmod>2024-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hyeok-jong.github.io/base/</loc>
-    <lastmod>2024-01-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hyeok-jong.github.io/base/clock/</loc>
     <lastmod>2024-01-16T00:00:00+00:00</lastmod>
