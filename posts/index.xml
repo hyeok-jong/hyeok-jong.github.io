@@ -6,7 +6,49 @@
     <description>Recent content in Posts on Enterai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 21 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>APPs for mac</title>
+      <link>https://hyeok-jong.github.io/posts/life/apps/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/life/apps/</guid>
+      <description>Magnet
+Typora
+Karabiner
+https://ke-complex-modifications.pqrs.org/?q=hjkl https://ke-complex-modifications.pqrs.org/#left_option_plus_hjkl_to_arrows
+https://apple.stackexchange.com/questions/443992/using-cmdh-j-k-l-as-arrows-in-macos
+Left ctrl + hjkl
+{ &amp;#34;description&amp;#34;: &amp;#34;Left ctrl + hjkl to arrow keys Vim&amp;#34;, &amp;#34;manipulators&amp;#34;: [ { &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;h&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [ &amp;#34;left_control&amp;#34; ], &amp;#34;optional&amp;#34;: [ &amp;#34;any&amp;#34; ] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;left_arrow&amp;#34; } ], &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34; }, { &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;j&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [ &amp;#34;left_control&amp;#34; ], &amp;#34;optional&amp;#34;: [ &amp;#34;any&amp;#34; ] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;down_arrow&amp;#34; } ], &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34; }, { &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;k&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [ &amp;#34;left_control&amp;#34; ], &amp;#34;optional&amp;#34;: [ &amp;#34;any&amp;#34; ] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;up_arrow&amp;#34; } ], &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34; }, { &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;l&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [ &amp;#34;left_control&amp;#34; ], &amp;#34;optional&amp;#34;: [ &amp;#34;any&amp;#34; ] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;right_arrow&amp;#34; } ], &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34; } ] } Left option + hjkl</description>
+    </item>
+    
+    <item>
+      <title>Devices</title>
+      <link>https://hyeok-jong.github.io/posts/life/devices/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/life/devices/</guid>
+      <description>iPhone ~ 2022.02.16 : XR 2022.02.17 ~ : iPhone 13, 128GB iPad 2022.03.16 ~ : iPad Pro, Wi-Fi, 12.9inch, Space Gray, 128GB, M1, Startlight
+AppleCare+ ~ 2024.03.15 Mac 2022.07.06 ~ : MacBook Air, M1, 13inch, 8-Core CPU, 7-Core GPU, 8GB Unified Memory, 256GB SSD Storage, Space Gray
+AppleCare+ ~ 2025.07.05 2023.12.06 ~ : Mac mini, M2, 8-Core CPU, 10-Core GPU, 8GB Unified Memory, 256GB SSD Storage AirPods ~ 2022.12.01 : AirPods, 2nd Generation 2022.</description>
+    </item>
+    
+    <item>
+      <title>Subscriptions</title>
+      <link>https://hyeok-jong.github.io/posts/life/subscriptions/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/life/subscriptions/</guid>
+      <description>YouTube
+Netflix
+ChatGPT
+Notability
+UPDF
+iCloud 200GB
+KAKAO Talk 서랍 플러스
+Coupang</description>
+    </item>
+    
     <item>
       <title>Notion</title>
       <link>https://hyeok-jong.github.io/posts/life/notion/</link>
@@ -45,6 +87,19 @@ I agree with ClickUp is not designed for schedule management but project managem
       <guid>https://hyeok-jong.github.io/posts/life/estate/</guid>
       <description>1. 등기사항전부 증명서 (등기부등본) 참고 영상
 표제부 - 집 주에 대한 정보 갑구 - 소자 대한 정보 을구 - 소유권 이외 주요정보 How to check 열람일시 표제부의 주소 == 계약서 주소 갑구의 임대인 인적사항 == 계약서 인적사항 == 신분증 == 계좌주인 If one of [가압류, 압류, 가등기, 가처분] is in 갑구 =&amp;gt; X 을구 - 근저당권 : 해당 집을 담보로 대출 받은 사항 (채권최고액 == 대출금액, 당연히 적을수록 좋음) 임차권등기명령 is in 을구 =&amp;gt; X 2.</description>
+    </item>
+    
+    <item>
+      <title>Flask on google</title>
+      <link>https://hyeok-jong.github.io/posts/0_todo/flaskongoogle/</link>
+      <pubDate>Wed, 06 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/0_todo/flaskongoogle/</guid>
+      <description>1. Flask 2. Google Cloud https://console.cloud.google.com
+downkload and install https://cloud.google.com/sdk/docs/install
+export PATH=&amp;quot;$PATH:/path/to/google-cloud-sdk/bin&amp;quot;
+3. Google Cloud Storage IAM &amp;amp; Admin -&amp;gt; Service Accounts -&amp;gt; get key as json
+Cloud Storage -&amp;gt; Buckets</description>
     </item>
     
     <item>

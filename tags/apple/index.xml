@@ -6,7 +6,33 @@
     <description>Recent content in Apple on Enterai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 06 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/tags/apple/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/tags/apple/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>APPs for mac</title>
+      <link>https://hyeok-jong.github.io/posts/life/apps/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/life/apps/</guid>
+      <description>Magnet
+Typora
+Karabiner
+https://ke-complex-modifications.pqrs.org/?q=hjkl https://ke-complex-modifications.pqrs.org/#left_option_plus_hjkl_to_arrows
+https://apple.stackexchange.com/questions/443992/using-cmdh-j-k-l-as-arrows-in-macos
+Left ctrl + hjkl
+{ &amp;#34;description&amp;#34;: &amp;#34;Left ctrl + hjkl to arrow keys Vim&amp;#34;, &amp;#34;manipulators&amp;#34;: [ { &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;h&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [ &amp;#34;left_control&amp;#34; ], &amp;#34;optional&amp;#34;: [ &amp;#34;any&amp;#34; ] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;left_arrow&amp;#34; } ], &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34; }, { &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;j&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [ &amp;#34;left_control&amp;#34; ], &amp;#34;optional&amp;#34;: [ &amp;#34;any&amp;#34; ] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;down_arrow&amp;#34; } ], &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34; }, { &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;k&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [ &amp;#34;left_control&amp;#34; ], &amp;#34;optional&amp;#34;: [ &amp;#34;any&amp;#34; ] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;up_arrow&amp;#34; } ], &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34; }, { &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;l&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [ &amp;#34;left_control&amp;#34; ], &amp;#34;optional&amp;#34;: [ &amp;#34;any&amp;#34; ] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;right_arrow&amp;#34; } ], &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34; } ] } Left option + hjkl</description>
+    </item>
+    
+    <item>
+      <title>Devices</title>
+      <link>https://hyeok-jong.github.io/posts/life/devices/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/life/devices/</guid>
+      <description>iPhone ~ 2022.02.16 : XR 2022.02.17 ~ : iPhone 13, 128GB iPad 2022.03.16 ~ : iPad Pro, Wi-Fi, 12.9inch, Space Gray, 128GB, M1, Startlight
+AppleCare+ ~ 2024.03.15 Mac 2022.07.06 ~ : MacBook Air, M1, 13inch, 8-Core CPU, 7-Core GPU, 8GB Unified Memory, 256GB SSD Storage, Space Gray
+AppleCare+ ~ 2025.07.05 2023.12.06 ~ : Mac mini, M2, 8-Core CPU, 10-Core GPU, 8GB Unified Memory, 256GB SSD Storage AirPods ~ 2022.12.01 : AirPods, 2nd Generation 2022.</description>
+    </item>
+    
     <item>
       <title>How to set mac</title>
       <link>https://hyeok-jong.github.io/posts/apple/how2setmac/</link>

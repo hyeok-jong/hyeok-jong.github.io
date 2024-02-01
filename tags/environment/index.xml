@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Environment on Enterai</title>
+    <link>https://hyeok-jong.github.io/tags/environment/</link>
+    <description>Recent content in Environment on Enterai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/tags/environment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apps for mac</title>
+      <link>https://hyeok-jong.github.io/posts/apple/app4mac/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/apple/app4mac/</guid>
+      <description>1. UPDF 2. Magnet 3. typora </description>
+    </item>
+    
+  </channel>
+</rss>
