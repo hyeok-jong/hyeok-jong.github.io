@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Noto Sans Cypriot
-- Font Author: Copyright 2022 The Noto Project Authors (https://github.com/notofonts/cypriot)
-- Font Source: http://fonts.gstatic.com/s/notosanscypriot/v19/8AtzGta9PYqQDjyp79a6f8Cj-3a3cxIsK5MPpahF.ttf
+- Font Title: Lexend
+- Font Author: Copyright 2019 The Lexend Project Authors (https://github.com/googlefonts/lexend)
+- Font Source: http://fonts.gstatic.com/s/lexend/v19/wlptgwvFAVdoq2_F94zlCfv0bz1WCzsX_LBte6KuGEo.ttf
 - Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
