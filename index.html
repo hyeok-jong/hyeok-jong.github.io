@@ -167,7 +167,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <style>
-        body, html {
+        .strikethrough {
+            text-decoration: line-through;
+        }
+
+        li {
+            font-size: 18px;
+        }
+        .main {/* css/common/main.css에 있는데 처음 페이지만 조금 더 늘리기 위해 다시 설정함. */
+            max-width: calc(var(--main-width) + var(--gap) * 12);
+        }
+        html {
             margin: 0;
             padding: 0;
             height: 100%;
@@ -211,28 +221,19 @@
 
 
 <body>
-    <br><br> 
-    <h1>Lee Hyeokjong</h1>
 
-    <p>last update : 2023. 12. 16</p>
-    <p>
-        I graduated with a BS degree, double majoring in Mathematics and Statistics, from the 
-        <a href="https://www.uos.ac.kr/main.do" target="_blank" style="font-weight:bold;">University of Seoul</a>. 
-        I am currently enrolled in the Combined Master's and Doctoral Program at 
-        <a href="https://www.snu.ac.kr/index.html" target="_blank" style="font-weight:bold;">Seoul National University</a>, 
-        focusing on Biomedical Sciences in the 
-        <a href="https://medicine.snu.ac.kr" target="_blank" style="font-weight:bold;">College of Medicine</a>. 
-        As part of the 
-        <a href="https://snuhsds.notion.site/" target="_blank" style="font-weight:bold;">Health System Data Science Lab</a>, 
-        under the mentorship of Professor 
-        <a href="https://snucm.elsevierpure.com/en/persons/y-park-64" target="_blank" style="font-weight:bold;">Sang Min Park</a>, 
-        my research is centered around deep learning applications in medical fields, particularly in vision and bio-signal analysis.
-    </p>
-    
+    <p>last update : 2024. 02. 02</p>
+    <h2>Lee Hyeokjong</h2>
+    <ul>
+        <li>Birth: 97.02.06, Korea</li>
+        <li>Major: BS Mathematics and Statistics (Double Major, University of Seoul)</li>
+        <li>Interests: Singing, Computer Vision, Deep Learning</li>
+    </ul>
+
     <div class="grid-container">
         <a href="base/contacts/" class="button">Contacts</a>
         <a href="base/news/" class="button">News</a>
-        <a href="base/cv/" class="button">CV</a>
+        <a href="base/cv/" class="button strikethrough">CV</a>
         <!-- <a href="/categories/" class="button button4">Categories</a> -->
         <a href="base/links/" class="button">Links</a>
         <a href="/posts/" class="button">Posts</a>
