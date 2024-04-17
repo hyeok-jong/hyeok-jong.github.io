@@ -222,7 +222,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Digital Clock</title>
     <style>
         body {
@@ -237,8 +237,7 @@
             top: 50%;
             transform: translate(-50%, -50%);
             display: flex; /* Enable flexbox layout */
-            width: 90%; /* Adjust width as necessary */
-            max-width: 1200px; /* Set a max width if desired */
+            width: 100%; /* Adjust width as necessary */
         }
         #dateTime {
             flex: 2; /* Takes up two-thirds of the space */
@@ -247,19 +246,19 @@
         #countUp {
             flex: 1; /* Takes up one-third of the space */
             text-align: right; /* Aligns text to the right */
-            font-size: 40px; /* Set font size to match the date */
+            font-size: 200%; /* Set font size to match the date */
         }
         .time, .date {
             letter-spacing: 0.05em;
-            padding: 5px 0;
+            padding: 1% 0;
             animation: glow 1s infinite alternate;
             text-shadow: 0 0 20px rgba(10, 175, 230, 0.75);
         }
         .time {
-            font-size: 80px; /* Larger font for time */
+            font-size: 200%; /* Larger font for time */
         }
         .date {
-            font-size: 40px; /* Smaller font for date */
+            font-size: 200%; /* Smaller font for date */
         }
         @keyframes glow {
             from {
@@ -275,7 +274,17 @@
             50% { opacity: 1; }
             50% { opacity: 1; }
         }
-
+        
+        @media (max-width: 768px) {
+            #dateTime, #countUp {
+                flex: 1; /* Make both divs take equal space */
+                text-align: center; /* Center align text for smaller screens */
+                padding: 10px 0; /* Add some padding */
+            }
+            .time, .date {
+                font-size: 4vw; /* Smaller font size for smaller devices */
+            }
+        }
 
 
     </style>
