@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Schedule on Brising</title>
+    <link>https://hyeok-jong.github.io/tags/schedule/</link>
+    <description>Recent content in Schedule on Brising</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 21 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/tags/schedule/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notion</title>
+      <link>https://hyeok-jong.github.io/posts/life/notion/</link>
+      <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/life/notion/</guid>
+      <description>일정 관리를 위해 Ipad note app을 사용했었고, ClickUp으로 갈아타려 했으나 유료이슈가 있어 결국 다시 Notion을 돌아옴.
+ClickUp은 완전하게 Project management with co-workers로 디자인 되어 있는데 지금 생각해보면 완전하게 노션과 같은 구조임.
+그래서 ClickUp 한 이틀 보면서 database / view를 이해하게 되었고 추가로 Project management를 어떻게 하면 될지에 대한 개념도 얻음.
+못써서 아쉽긴 한데 나름 도움이 되었음.
+1. 무엇이 필요한가? 무엇이 필요한지 그리고 얼마나 기록할 것이지 둘다 중요함.
+우선 필요한 것들은 : To do list, Daily summary, Project / Research management 정도임.</description>
+    </item>
+    
+    <item>
+      <title>ClickUp</title>
+      <link>https://hyeok-jong.github.io/posts/life/clickup/</link>
+      <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/life/clickup/</guid>
+      <description>Manage schedules, projects, tasks&amp;hellip;. are very difficult.
+That&amp;rsquo;s why numerous apps exist.
+First, I used noteapp with my custom templets.
+However, the method have critical disadvantage because the noteapp are optimized with handwriting so that I can edit it only with IPad.
+Thus I moved to notion.
+But notion also was not the best option for me.
+Currently I use ClickUp.
+I agree with ClickUp is not designed for schedule management but project management with co-workers.</description>
+    </item>
+    
+  </channel>
+</rss>

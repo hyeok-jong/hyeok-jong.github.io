@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Notion | Brising</title>
+<meta name="keywords" content="Life, Schedule">
+<meta name="description" content="일정 관리를 위해 Ipad note app을 사용했었고, ClickUp으로 갈아타려 했으나 유료이슈가 있어 결국 다시 Notion을 돌아옴.
+ClickUp은 완전하게 Project management with co-workers로 디자인 되어 있는데 지금 생각해보면 완전하게 노션과 같은 구조임.
+그래서 ClickUp 한 이틀 보면서 database / view를 이해하게 되었고 추가로 Project management를 어떻게 하면 될지에 대한 개념도 얻음.
+못써서 아쉽긴 한데 나름 도움이 되었음.
+1. 무엇이 필요한가? 무엇이 필요한지 그리고 얼마나 기록할 것이지 둘다 중요함.
+우선 필요한 것들은 : To do list, Daily summary, Project / Research management 정도임.">
+<meta name="author" content="">
+<link rel="canonical" href="https://hyeok-jong.github.io/posts/life/notion/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.870dbc54628dda496660bde2400f60a8780d95deee9d875504f621a18f074418.css" integrity="sha256-hw28VGKN2klmYL3iQA9gqHgNld7unYdVBPYhoY8HRBg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://hyeok-jong.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://hyeok-jong.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hyeok-jong.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://hyeok-jong.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://hyeok-jong.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Notion" />
+<meta property="og:description" content="일정 관리를 위해 Ipad note app을 사용했었고, ClickUp으로 갈아타려 했으나 유료이슈가 있어 결국 다시 Notion을 돌아옴.
+ClickUp은 완전하게 Project management with co-workers로 디자인 되어 있는데 지금 생각해보면 완전하게 노션과 같은 구조임.
+그래서 ClickUp 한 이틀 보면서 database / view를 이해하게 되었고 추가로 Project management를 어떻게 하면 될지에 대한 개념도 얻음.
+못써서 아쉽긴 한데 나름 도움이 되었음.
+1. 무엇이 필요한가? 무엇이 필요한지 그리고 얼마나 기록할 것이지 둘다 중요함.
+우선 필요한 것들은 : To do list, Daily summary, Project / Research management 정도임." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hyeok-jong.github.io/posts/life/notion/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-01-21T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Notion"/>
+<meta name="twitter:description" content="일정 관리를 위해 Ipad note app을 사용했었고, ClickUp으로 갈아타려 했으나 유료이슈가 있어 결국 다시 Notion을 돌아옴.
+ClickUp은 완전하게 Project management with co-workers로 디자인 되어 있는데 지금 생각해보면 완전하게 노션과 같은 구조임.
+그래서 ClickUp 한 이틀 보면서 database / view를 이해하게 되었고 추가로 Project management를 어떻게 하면 될지에 대한 개념도 얻음.
+못써서 아쉽긴 한데 나름 도움이 되었음.
+1. 무엇이 필요한가? 무엇이 필요한지 그리고 얼마나 기록할 것이지 둘다 중요함.
+우선 필요한 것들은 : To do list, Daily summary, Project / Research management 정도임."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://hyeok-jong.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Notion",
+      "item": "https://hyeok-jong.github.io/posts/life/notion/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Notion",
+  "name": "Notion",
+  "description": "일정 관리를 위해 Ipad note app을 사용했었고, ClickUp으로 갈아타려 했으나 유료이슈가 있어 결국 다시 Notion을 돌아옴.\nClickUp은 완전하게 Project management with co-workers로 디자인 되어 있는데 지금 생각해보면 완전하게 노션과 같은 구조임.\n그래서 ClickUp 한 이틀 보면서 database / view를 이해하게 되었고 추가로 Project management를 어떻게 하면 될지에 대한 개념도 얻음.\n못써서 아쉽긴 한데 나름 도움이 되었음.\n1. 무엇이 필요한가? 무엇이 필요한지 그리고 얼마나 기록할 것이지 둘다 중요함.\n우선 필요한 것들은 : To do list, Daily summary, Project / Research management 정도임.",
+  "keywords": [
+    "Life", "Schedule"
+  ],
+  "articleBody": "일정 관리를 위해 Ipad note app을 사용했었고, ClickUp으로 갈아타려 했으나 유료이슈가 있어 결국 다시 Notion을 돌아옴.\nClickUp은 완전하게 Project management with co-workers로 디자인 되어 있는데 지금 생각해보면 완전하게 노션과 같은 구조임.\n그래서 ClickUp 한 이틀 보면서 database / view를 이해하게 되었고 추가로 Project management를 어떻게 하면 될지에 대한 개념도 얻음.\n못써서 아쉽긴 한데 나름 도움이 되었음.\n1. 무엇이 필요한가? 무엇이 필요한지 그리고 얼마나 기록할 것이지 둘다 중요함.\n우선 필요한 것들은 : To do list, Daily summary, Project / Research management 정도임.\nTo do list : 뭘 해야 하는가\nDaily summary : 무엇을 했는가\nProject management : 어떤 flow로 진행 하는가\n2. 왜 노션인가? 우선 사용하는 사람들이 많고 동기화가 빠름.\n그리고 Notion Calendar가 있음.\n3. 어떻게 사용하는가? To do list를 예로 들어보자.\n개인적인 일 - 예를들어 블로그 정리, 가방정리 와 같은 카테고리가 있고, 연구 - 논문 작성, 모델 ablation 등이 있음.\n원래는 이것들을 모두 한 파일에 관리하려 했으나, 비효율 적인거 같음.\n개인적인 일은 평생 존재 하는 카테고리인데, 연구나 과제는 1년 안쪽이라고 생각함.\n따라서 각각의 카테고리를 만드는 것은 무한대로 늘어나니 결국 각각을 하나의 프로젝트로 만드는 것이 좋겠다고 판단함.\n0. database, page, view의 개념 우선 알아야 할 것이 databaset, page, view 에 대한 개념임. (완전히 개인적인 견해임) Notion은 ClickUp 처럼 정해저 있는 Heirarchy가 없음.\n기본적으로 page안에 계속 page를 만들수가 있음.\npage는 기본적으로 md로 작동하며 이 자체가 하나의 folder로 상용됨.\n가장 두드러지는 특징이 database임. (ClickUp 덕분에 이해하게 됨.)\n이게 정확히 어떤 형태인지는 접근 할 수 없어서 헷갈리는데 ClickUp을 보면 정확하게 database에 접근이 가능함.\nNotion에 에서 /database를 보면 기본적으로 Table이 나옴.\n근데 이게 database는 절대로 아님, 그냥 Table은 하나의 view임.\n즉, database는 우리가 접근 할 수 없지만 그래도 최대한 user friendly하게 해줘야 하니까 우선은 Table view로 보이게 하는것임.\n그래서 /database를 만들고 Table를 누르면 바로 Edit View가 나오는 것을 볼 수 있음.\n즉, 내가 원하는 대로 View를 설정해서 보면 됨.\n종합해보면, 최상위 page는 project라고 생각하면 쉽고 그 안에 database를 만들어 여러가지 view로 볼 수 있음.\n또한 page in page가 되니 해당 project에는 page를 추가하여 여러가지 sub projcet를 만들거나 해당 project의 설명을 적을 수 있음.\n아래는 실제로 내가 어떻게 사용하는지에 관한 예시임.\n(예시를 보면 위에 글이 이해됨.)\n각 예시는 하나의 project를 의미하며 대부분 최상위 page라고 생각하면 쉬움.\n1. Personal 개인적인 일을 적는 project임.\n예를들어 블로그 수정, 동아리 등등의 일정과 무엇을 했는지 간단하게 적을 수 있음.\n해당 project는 하나의 database를 갖고 있음.\n그리고 이를 쉽게 보여주기 위해 calendar view를 적용하여 가장 위에 위치시킴.\n수정을 쉽게 하기위해 그 아래 Board, Table를 위치 시켰음.\n세개의 view 모두 같은 source의 database이므로 하나만 수정해도 전체가 수정 됨.\n예를들어 calendar view에서 특정 task를 드래그 하면 날짜를 Table view에서 바꾸는 것 보다 더 쉽게 바꿀 수 있음.\n그리고 Table view를 보면 간단하게 상세 설명을 적을 수 있는 Abstract(text) 도 만들어 두었음.\n만약 더 많은 정보를 적어야 한다면 Name에서 해당 블럭을 클릭하면 page로 열림.\n그럼 md형식으로 정리 할 수 있음.\n근데 최대한 그렇게 하는것은 안하려고 하는게 모든 task에 page가 있다면 결국에는 한눈에 볼 수가 없음.\n그리고 데이터도 이상해 지는데 database안에 다시 nested page가 생기는게 됨.\n그래서 현재는 최대한 Table view에 칼럼만 추가하려고 함.\n칼럼을 추가하는 것은 page의 내용으로 들어가는 것이 아니라 property로 들어가기 때문에 관리하기가 쉬움.\n예를들어 위의 calendar view에서 Abstract 기준으로 특정 단어가 들어간것만 보여주라는 filter를 사용할 수 있음.\n여기서 property만 적으면 page로 인식이 안되는거 같음.\n이렇게 해서 개인적인 일에 대한 관리를 할 수 있음.\n뒤에 나오는 Project/Research와는 다르게 하나하나의 task가 크게 적을것이 없어 Abstract만으로도 충분할 것으로 예상됨.\n해당 project는 사소하게 할일이나 한일을 기록하는 용도로 사용하고 있음.\n평균적으로 하루게 3개정도를 작성함.\n약간 걱정되는게 그럼 1년에 1000개인데 이게 되는지 정확하게 모르겠음.\n20년도 이후에 personal use에서는 제한이 사라졌다고 나오긴 함.\n만약 안되면 어쩔수 없이 원래대로 하나의 페이지 안에서 서술 하는 방식으로 가야할 듯.\n위에것만 보면 apple calendar만 사용해도 충분할 거 같은데 결정적으로 table과 board view가 주는 장점이 확실함.\nApple calendar로 대체 가능 하다고 생각하긴함.\n2024.01.22.Monday 우려했던 일이 일어남.\n연구와 프로젝트를 분리했음에도 너무 많은것이 있음.\n따라서 actual personal로 바꿈.\n즉, meeting, seminar, blog를 또다른 프로젝트로 만듬.\n2. Projects / Researches ClickUp에서 많은 인사이트들을 얻음.\n이부분은 최상위 page안에 각각의 project들이 있음.\nproject라는 단어는 앞에서 썼으니 research라고 하겠음.\nresearch관리는 personal 관리와 확실히 구분되는 점이 있음.\nresearch는\n종료가 있음. 매일의 기록보다는 flow를 보여주는것이 좋음. sub project가 존재함. 예를들어 ablation, related work 등 그래서 기본적으로 Personal form을 가져가되 sub project들은 아래처럼 새로운 하나의 database를 만들고 이를 page로 생성하여 gallery view로 보여줌.\n즉, personal에서는 하나의 database안에 item들이 많으니 page가 있는것을 지양했는데, 여기서는 database안에 item은 많지 않고 오히려 하나의 item안에 들어가는 내용이 많음.\n따라서 gallery view가 효율적임.\n여기서 flow를 더 잘 보여주기 위해 ClickUp의 whiteborad같은 페이지를 추가할 예정임.\n2024.01.23.Tuesday 하나의 page에 대해 multiple dates 설정이 안됨.\n근데 여기서는 하나의 카테고리에 대해 저번주 월요일, 이번수 수요일 이렇게 multiple이 필요함.\n따라서 날짜 표시는 personal과 같이 제목만 넣고 이를 relation을 통해 category에 있는것과 연결\n3. Pros and cons ClickUp과 비교하면 서로 다른 database를 하나의 view에 보는것이 불가능 하다는 단점이 있음.\n다만, Notion Calendar는 여러개의 database를 한번에 볼 수 있긴함.\n즉, 사실상 calendar view만 가능하다는 의미임.\n4. Notion을 사용하지 못한다면? GoodNote 처럼 갑자기 이상한 시스템으로 바뀌는 경우를 생각할 수 있음.\n이미 노션을 사용하면 어떻게 일정들을 관리하면 되는지 배웠기에 같은 Heirarchy를 사용하면 csv 파일로도 충분히 효율적으로 관리 할 수 있다고 생각됨.\n만약 진짜 노션을 못쓰는 경우가 온다면 그냥 돈내고 GCP에 호스팅 하면 됨. Flask로 하면 될듯.\n사실 가장 문제는 기존의 데이터를 어떻게 저장되나 인데, export에서 모든것은 html 형태로 저장하면 잘 되는것을 확인함.\n5.Apple Calendar 알림 울려야 하는 모든 것들\n추가로 block의 개수와 내용의 길이는 trade-off관계인듯.\nPersonal의 경우 block이 많고, project의 경우 한 block의 내용이 많음.\n",
+  "wordCount" : "877",
+  "inLanguage": "en",
+  "datePublished": "2024-01-21T00:00:00Z",
+  "dateModified": "2024-01-21T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hyeok-jong.github.io/posts/life/notion/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Brising",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hyeok-jong.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<head>
+    
+    <style>
+        .current-time {
+            font-size: 22px;
+            font-weight: bold;
+            color: rgb(194, 190, 178);  
+        }
+    </style>
+</head>
+
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://hyeok-jong.github.io/" accesskey="h" title="Brising (Alt + H)">Brising</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+        <div class="current-time" style="font-size: 16px;">
+            <a href="https://hyeok-jong.github.io/base/clock/" style="color: inherit; text-decoration: none;" id="time-link">
+                
+            </a>
+        </div>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                const currentTimeElement = document.querySelector('#time-link'); 
+                const updateTime = () => {
+                    const now = new Date();
+                    const dayOfWeek = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(now);
+                    const date = now.toISOString().split('T')[0]; 
+                    const time = now.toTimeString().split(' ')[0]; 
+                    currentTimeElement.textContent = `${date}, ${dayOfWeek} ${time}`;
+                };
+                setInterval(updateTime, 1000);
+                updateTime(); 
+            });
+        </script>
+    
+    </nav>
+
+</header>
+<main class="main" >
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Notion
+    </h1>
+    <ul class="post-tags">
+      <li><a href="https://hyeok-jong.github.io/tags/life/">Life</a></li>
+      <li><a href="https://hyeok-jong.github.io/tags/schedule/">Schedule</a></li>
+    </ul>
+    <div class="post-meta"><span title='2024-01-21 00:00:00 +0000 UTC'>January 21, 2024</span>
+
+</div>
+  </header> 
+  <div class="post-content" ><p>일정 관리를 위해 Ipad note app을 사용했었고, ClickUp으로 갈아타려 했으나 유료이슈가 있어 결국 다시 Notion을 돌아옴.<br>
+ClickUp은 완전하게 Project management with co-workers로 디자인 되어 있는데 지금 생각해보면 완전하게 노션과 같은 구조임.<br>
+그래서 ClickUp 한 이틀 보면서 database / view를 이해하게 되었고 추가로 Project management를 어떻게 하면 될지에 대한 개념도 얻음.<br>
+못써서 아쉽긴 한데 나름 도움이 되었음.</p>
+<h1 id="1-무엇이-필요한가">1. 무엇이 필요한가?<a hidden class="anchor" aria-hidden="true" href="#1-무엇이-필요한가">#</a></h1>
+<p>무엇이 필요한지 그리고 얼마나 기록할 것이지 둘다 중요함.<br>
+우선 필요한 것들은 : To do list, Daily summary, Project / Research management 정도임.<br>
+To do list : 뭘 해야 하는가<br>
+Daily summary : 무엇을 했는가<br>
+Project management : 어떤 flow로 진행 하는가</p>
+<h1 id="2-왜-노션인가">2. 왜 노션인가?<a hidden class="anchor" aria-hidden="true" href="#2-왜-노션인가">#</a></h1>
+<p>우선 사용하는 사람들이 많고 동기화가 빠름.<br>
+그리고 Notion Calendar가 있음.</p>
+<h1 id="3-어떻게-사용하는가">3. 어떻게 사용하는가?<a hidden class="anchor" aria-hidden="true" href="#3-어떻게-사용하는가">#</a></h1>
+<p>To do list를 예로 들어보자.<br>
+개인적인 일 - 예를들어 블로그 정리, 가방정리 와 같은 카테고리가 있고, 연구 - 논문 작성, 모델 ablation 등이 있음.<br>
+원래는 이것들을 모두 한 파일에 관리하려 했으나, 비효율 적인거 같음.<br>
+개인적인 일은 평생 존재 하는 카테고리인데, 연구나 과제는 1년 안쪽이라고 생각함.<br>
+따라서 각각의 카테고리를 만드는 것은 무한대로 늘어나니 결국 각각을 하나의 프로젝트로 만드는 것이 좋겠다고 판단함.</p>
+<h2 id="0-database-page-view의-개념">0. database, page, view의 개념<a hidden class="anchor" aria-hidden="true" href="#0-database-page-view의-개념">#</a></h2>
+<p>우선 알아야 할 것이 databaset, page, view 에 대한 개념임. (완전히 개인적인 견해임)
+Notion은 ClickUp 처럼 정해저 있는 Heirarchy가 없음.<br>
+기본적으로 page안에 계속 page를 만들수가 있음.<br>
+page는 기본적으로 md로 작동하며 이 자체가 하나의 folder로 상용됨.</p>
+<p>가장 두드러지는 특징이 database임. (ClickUp 덕분에 이해하게 됨.)<br>
+이게 정확히 어떤 형태인지는 접근 할 수 없어서 헷갈리는데 ClickUp을 보면 정확하게 database에 접근이 가능함.<br>
+Notion에 에서 /database를 보면 기본적으로 Table이 나옴.<br>
+근데 이게 database는 절대로 아님, 그냥 Table은 하나의 view임.<br>
+즉, database는 우리가 접근 할 수 없지만 그래도 최대한 user friendly하게 해줘야 하니까 우선은 Table view로 보이게 하는것임.<br>
+그래서 /database를 만들고 Table를 누르면 바로 Edit View가 나오는 것을 볼 수 있음.<br>
+즉, 내가 원하는 대로 View를 설정해서 보면 됨.</p>
+<p>종합해보면, 최상위 page는 project라고 생각하면 쉽고 그 안에 database를 만들어 여러가지 view로 볼 수 있음.<br>
+또한 page in page가 되니 해당 project에는 page를 추가하여 여러가지 sub projcet를 만들거나 해당 project의 설명을 적을 수 있음.</p>
+<p>아래는 실제로 내가 어떻게 사용하는지에 관한 예시임.<br>
+(예시를 보면 위에 글이 이해됨.)</p>
+<p>각 예시는 하나의 project를 의미하며 대부분 최상위 page라고 생각하면 쉬움.</p>
+<h2 id="1-personal">1. Personal<a hidden class="anchor" aria-hidden="true" href="#1-personal">#</a></h2>
+<p>개인적인 일을 적는 project임.<br>
+예를들어 블로그 수정, 동아리 등등의 일정과 무엇을 했는지 간단하게 적을 수 있음.</p>
+<p>해당 project는 하나의 database를 갖고 있음.<br>
+그리고 이를 쉽게 보여주기 위해 calendar view를 적용하여 가장 위에 위치시킴.<br>
+<img loading="lazy" src="images/1.png" alt=""  />
+</p>
+<p>수정을 쉽게 하기위해 그 아래 Board, Table를 위치 시켰음.<br>
+<img loading="lazy" src="images/2.png" alt=""  />
+ <img loading="lazy" src="images/3.png" alt=""  />
+</p>
+<p>세개의 view 모두 같은 source의 database이므로 하나만 수정해도 전체가 수정 됨.<br>
+예를들어 calendar view에서 특정 task를 드래그 하면 날짜를 Table view에서 바꾸는 것 보다 더 쉽게 바꿀 수 있음.<br>
+그리고 Table view를 보면 간단하게 상세 설명을 적을 수 있는 Abstract(text) 도 만들어 두었음.<br>
+만약 더 많은 정보를 적어야 한다면 Name에서 해당 블럭을 클릭하면 page로 열림.<br>
+그럼 md형식으로 정리 할 수 있음.<br>
+근데 최대한 그렇게 하는것은 안하려고 하는게 모든 task에 page가 있다면 결국에는 한눈에 볼 수가 없음.<br>
+그리고 데이터도 이상해 지는데 database안에 다시 nested page가 생기는게 됨.<br>
+그래서 현재는 최대한 Table view에 칼럼만 추가하려고 함.<br>
+칼럼을 추가하는 것은 page의 내용으로 들어가는 것이 아니라 property로 들어가기 때문에 관리하기가 쉬움.<br>
+예를들어 위의 calendar view에서 Abstract 기준으로 특정 단어가 들어간것만 보여주라는 filter를 사용할 수 있음.</p>
+<p><img loading="lazy" src="images/4.png" alt=""  />
+ <br>
+여기서 property만 적으면 page로 인식이 안되는거 같음.</p>
+<p>이렇게 해서 개인적인 일에 대한 관리를 할 수 있음.<br>
+뒤에 나오는 Project/Research와는 다르게 하나하나의 task가 크게 적을것이 없어 Abstract만으로도 충분할 것으로 예상됨.<br>
+해당 project는 사소하게 할일이나 한일을 기록하는 용도로 사용하고 있음.<br>
+평균적으로 하루게 3개정도를 작성함.</p>
+<p>약간 걱정되는게 그럼 1년에 1000개인데 이게 되는지 정확하게 모르겠음.<br>
+20년도 이후에 personal use에서는 제한이 사라졌다고 나오긴 함.</p>
+<p>만약 안되면 어쩔수 없이 원래대로 하나의 페이지 안에서 서술 하는 방식으로 가야할 듯.</p>
+<p>위에것만 보면 apple calendar만 사용해도 충분할 거 같은데 결정적으로 table과 board view가 주는 장점이 확실함.<br>
+Apple calendar로 대체 가능 하다고 생각하긴함.</p>
+<h3 id="20240122monday">2024.01.22.Monday<a hidden class="anchor" aria-hidden="true" href="#20240122monday">#</a></h3>
+<p>우려했던 일이 일어남.<br>
+연구와 프로젝트를 분리했음에도 너무 많은것이 있음.<br>
+따라서 actual personal로 바꿈.<br>
+즉, meeting, seminar, blog를 또다른 프로젝트로 만듬.</p>
+<h2 id="2-projects--researches">2. Projects / Researches<a hidden class="anchor" aria-hidden="true" href="#2-projects--researches">#</a></h2>
+<p>ClickUp에서 많은 인사이트들을 얻음.<br>
+이부분은 최상위 page안에 각각의 project들이 있음.<br>
+project라는 단어는 앞에서 썼으니 research라고 하겠음.</p>
+<p>research관리는 personal 관리와 확실히 구분되는 점이 있음.</p>
+<p>research는</p>
+<ul>
+<li>종료가 있음.</li>
+<li>매일의 기록보다는 flow를 보여주는것이 좋음.</li>
+<li>sub project가 존재함. 예를들어 ablation, related work 등</li>
+</ul>
+<p>그래서 기본적으로 Personal form을 가져가되 sub project들은 아래처럼 새로운 하나의 database를 만들고 이를 page로 생성하여 gallery view로 보여줌.</p>
+<p><img loading="lazy" src="images/4.png" alt=""  />
+</p>
+<p>즉, personal에서는 하나의 database안에 item들이 많으니 page가 있는것을 지양했는데, 여기서는 database안에 item은 많지 않고 오히려 하나의 item안에 들어가는 내용이 많음.<br>
+따라서 gallery view가 효율적임.</p>
+<p>여기서 flow를 더 잘 보여주기 위해 ClickUp의 whiteborad같은 페이지를 추가할 예정임.</p>
+<h3 id="20240123tuesday">2024.01.23.Tuesday<a hidden class="anchor" aria-hidden="true" href="#20240123tuesday">#</a></h3>
+<p>하나의 page에 대해 multiple dates 설정이 안됨.<br>
+근데 여기서는 하나의 카테고리에 대해 저번주 월요일, 이번수 수요일 이렇게 multiple이 필요함.<br>
+따라서 날짜 표시는 personal과 같이 제목만 넣고 이를 relation을 통해 category에 있는것과 연결</p>
+<h1 id="3-pros-and-cons">3. Pros and cons<a hidden class="anchor" aria-hidden="true" href="#3-pros-and-cons">#</a></h1>
+<p>ClickUp과 비교하면 서로 다른 database를 하나의 view에 보는것이 불가능 하다는 단점이 있음.<br>
+다만, Notion Calendar는 여러개의 database를 한번에 볼 수 있긴함.<br>
+즉, 사실상 calendar view만 가능하다는 의미임.</p>
+<h1 id="4-notion을-사용하지-못한다면">4. Notion을 사용하지 못한다면?<a hidden class="anchor" aria-hidden="true" href="#4-notion을-사용하지-못한다면">#</a></h1>
+<p>GoodNote 처럼 갑자기 이상한 시스템으로 바뀌는 경우를 생각할 수 있음.<br>
+이미 노션을 사용하면 어떻게 일정들을 관리하면 되는지 배웠기에 같은 Heirarchy를 사용하면 csv 파일로도 충분히 효율적으로 관리 할 수 있다고 생각됨.<br>
+만약 진짜 노션을 못쓰는 경우가 온다면 그냥 돈내고 GCP에 호스팅 하면 됨. Flask로 하면 될듯.</p>
+<p>사실 가장 문제는 기존의 데이터를 어떻게 저장되나 인데, export에서 모든것은 html 형태로 저장하면 잘 되는것을 확인함.</p>
+<h1 id="5apple-calendar">5.Apple Calendar<a hidden class="anchor" aria-hidden="true" href="#5apple-calendar">#</a></h1>
+<p>알림 울려야 하는 모든 것들</p>
+<p>추가로 block의 개수와 내용의 길이는 trade-off관계인듯.<br>
+Personal의 경우 block이 많고, project의 경우 한 block의 내용이 많음.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://hyeok-jong.github.io/">Brising</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

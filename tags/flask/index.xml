@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Flask on Brising</title>
+    <link>https://hyeok-jong.github.io/tags/flask/</link>
+    <description>Recent content in Flask on Brising</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 06 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/tags/flask/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flask on google</title>
+      <link>https://hyeok-jong.github.io/posts/0_todo/flaskongoogle/</link>
+      <pubDate>Wed, 06 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/0_todo/flaskongoogle/</guid>
+      <description>1. Flask test
+2. Google Cloud https://console.cloud.google.com
+downkload and install https://cloud.google.com/sdk/docs/install
+export PATH=&amp;quot;$PATH:/path/to/google-cloud-sdk/bin&amp;quot;
+3. Google Cloud Storage IAM &amp;amp; Admin -&amp;gt; Service Accounts -&amp;gt; get key as json
+Cloud Storage -&amp;gt; Buckets</description>
+    </item>
+    
+  </channel>
+</rss>
