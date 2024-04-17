@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Bases on Brising</title>
+    <link>https://hyeok-jong.github.io/base/</link>
+    <description>Recent content in Bases on Brising</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 25 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/base/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Calendar</title>
+      <link>https://hyeok-jong.github.io/base/calendar/</link>
+      <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/base/calendar/</guid>
+      <description> calendar Open Web Calendar https://apple.stackexchange.com/questions/444779/is-it-possible-to-host-my-public-apple-calendar-on-my-website &gt; </description>
+    </item>
+    
+    <item>
+      <title>Current Time</title>
+      <link>https://hyeok-jong.github.io/base/clock/</link>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/base/clock/</guid>
+      <description> &lt;!DOCTYPE html&gt; Digital Clock </description>
+    </item>
+    
+    <item>
+      <title>Contacts</title>
+      <link>https://hyeok-jong.github.io/base/contacts/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/base/contacts/</guid>
+      <description> LinkeIn Email QR supported by goqr </description>
+    </item>
+    
+    <item>
+      <title>CV</title>
+      <link>https://hyeok-jong.github.io/base/cv/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/base/cv/</guid>
+      <description>curriculum vitae will be posted soon.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hyeok-jong.github.io/base/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/base/links/</guid>
+      <description> Links my SNU SNU Medicine SNU Biomedical UoS Portal Github Velog Musics Calendar </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hyeok-jong.github.io/base/news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/base/news/</guid>
+      <description>last update : 2023. 11. 29 Starts graduate school
+2023. 09. 01
+Combined Master&#39;s and Doctoral program at Seoul National University. Bachelor&#39;s degree graduation.
+2017. 03. 01 ~ 2023. 08. 22
+Received a Bachelor&#39;s degree in Mathematics and Statistics through a double major at University of Seoul. Internship at University of Seoul
+2021. 08. 01 ~ 2023. 08. 22
+Started studying deep learning, primarily focusing on vision, for the first time as a research intern at the Mathematical and Computational Laboratory at University of Seoul.</description>
+    </item>
+    
+  </channel>
+</rss>

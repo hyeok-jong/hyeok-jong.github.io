@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Current Time | Brising</title>
+<meta name="keywords" content="">
+<meta name="description" content=" &lt;!DOCTYPE html&gt; Digital Clock ">
+<meta name="author" content="">
+<link rel="canonical" href="https://hyeok-jong.github.io/base/clock/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.870dbc54628dda496660bde2400f60a8780d95deee9d875504f621a18f074418.css" integrity="sha256-hw28VGKN2klmYL3iQA9gqHgNld7unYdVBPYhoY8HRBg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://hyeok-jong.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://hyeok-jong.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hyeok-jong.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://hyeok-jong.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://hyeok-jong.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Current Time" />
+<meta property="og:description" content=" &lt;!DOCTYPE html&gt; Digital Clock " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hyeok-jong.github.io/base/clock/" /><meta property="article:section" content="base" />
+<meta property="article:published_time" content="2024-01-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-01-16T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Current Time"/>
+<meta name="twitter:description" content=" &lt;!DOCTYPE html&gt; Digital Clock "/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Bases",
+      "item": "https://hyeok-jong.github.io/base/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Current Time",
+      "item": "https://hyeok-jong.github.io/base/clock/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Current Time",
+  "name": "Current Time",
+  "description": " \u003c!DOCTYPE html\u003e Digital Clock ",
+  "keywords": [
+    
+  ],
+  "articleBody": " \u003c!DOCTYPE html\u003e Digital Clock ",
+  "wordCount" : "4",
+  "inLanguage": "en",
+  "datePublished": "2024-01-16T00:00:00Z",
+  "dateModified": "2024-01-16T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hyeok-jong.github.io/base/clock/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Brising",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hyeok-jong.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<head>
+    
+    <style>
+        .current-time {
+            font-size: 22px;
+            font-weight: bold;
+            color: rgb(194, 190, 178);  
+        }
+    </style>
+</head>
+
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://hyeok-jong.github.io/" accesskey="h" title="Brising (Alt + H)">Brising</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+        <div class="current-time" style="font-size: 16px;">
+            <a href="https://hyeok-jong.github.io/base/clock/" style="color: inherit; text-decoration: none;" id="time-link">
+                
+            </a>
+        </div>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                const currentTimeElement = document.querySelector('#time-link'); 
+                const updateTime = () => {
+                    const now = new Date();
+                    const dayOfWeek = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(now);
+                    const date = now.toISOString().split('T')[0]; 
+                    const time = now.toTimeString().split(' ')[0]; 
+                    currentTimeElement.textContent = `${date}, ${dayOfWeek} ${time}`;
+                };
+                setInterval(updateTime, 1000);
+                updateTime(); 
+            });
+        </script>
+    
+    </nav>
+
+</header>
+<main class="main" >
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Current Time
+    </h1>
+    <ul class="post-tags">
+    </ul>
+    <div class="post-meta"><span title='2024-01-16 00:00:00 +0000 UTC'>January 16, 2024</span>
+
+</div>
+  </header> 
+  <div class="post-content" >
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        body {
+            background: #0f3854;
+            background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
+        }
+        #clock {
+            font-family: 'Share Tech Mono', monospace;
+            color: #daf6ff;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex; /* Enable flexbox layout */
+            width: 90%; /* Adjust width as necessary */
+            max-width: 1200px; /* Set a max width if desired */
+        }
+        #dateTime {
+            flex: 2; /* Takes up two-thirds of the space */
+            text-align: left; /* Aligns text to the left */
+        }
+        #countUp {
+            flex: 1; /* Takes up one-third of the space */
+            text-align: right; /* Aligns text to the right */
+            font-size: 40px; /* Set font size to match the date */
+        }
+        .time, .date {
+            letter-spacing: 0.05em;
+            padding: 5px 0;
+            animation: glow 1s infinite alternate;
+            text-shadow: 0 0 20px rgba(10, 175, 230, 0.75);
+        }
+        .time {
+            font-size: 80px; /* Larger font for time */
+        }
+        .date {
+            font-size: 40px; /* Smaller font for date */
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(10, 175, 230, 0.5), 0 0 20px rgba(10, 175, 230, 0.5), 0 0 30px rgba(10, 175, 230, 0.5);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 30px rgba(10, 175, 230, 1), 0 0 40px rgba(10, 175, 230, 1);
+            }
+        }
+    
+
+        @keyframes fadeIn {
+            50% { opacity: 1; }
+            50% { opacity: 1; }
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div id="clock">
+    <div id="dateTime">
+        <p class="date" id="date"></p>
+        <p class="time" id="time"></p>
+    </div>
+    <div id="countUp"></div>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script>
+        function fireConfetti() {
+            var duration = 15 * 1000;
+            var animationEnd = Date.now() + duration;
+            var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+    
+            function randomConfetti() {
+                return {
+                    ...defaults,
+                    particleCount: Math.random() * 100 + 50,
+                    origin: { x: Math.random(), y: Math.random() - 0.1 },
+                    angle: Math.random() * 360,
+                    startVelocity: 30 + Math.random() * 20,
+                    scalar: Math.random() + 0.5
+                };
+            }
+    
+            var interval = setInterval(function() {
+                var timeLeft = animationEnd - Date.now();
+                if (timeLeft <= 0) {
+                    return clearInterval(interval);
+                }
+                confetti(randomConfetti());
+            }, 250);
+        }
+    
+        // Start the fireworks effect when the page loads
+        window.onload = fireConfetti;
+        function updateTime() {
+            var now = new Date();
+    
+            // Extract each part of the date
+            var year = now.getFullYear();
+            var month = now.toLocaleString('en-US', { month: 'long' });
+            var dayOfWeek = now.toLocaleString('en-US', { weekday: 'long' });
+            var dayOfMonth = now.getDate();
+    
+            // Format the time part
+            var hours = zeroPad(now.getHours());
+            var minutes = zeroPad(now.getMinutes());
+            var seconds = zeroPad(now.getSeconds());
+            var timeString = hours + ':' + minutes + ':' + seconds;
+    
+            // Construct the date string with line breaks
+            var dateString = `${dayOfWeek}<br>${month}<br>${dayOfMonth}<br>${year}`;
+    
+            // Update the DOM elements using innerHTML to parse the <br> tags
+            document.getElementById('date').innerHTML = dateString;
+            document.getElementById('time').textContent = timeString;
+        }
+    
+        function zeroPad(value) {
+            return value.toString().padStart(2, '0');
+        }
+
+
+        function updateCountUp() {
+            var startTime = new Date('2024-04-17T13:00:00'); // Check that the date is correctly formatted
+            var now = new Date(); // Current time
+            var diff = now - startTime; // Difference in milliseconds
+        
+            if (diff > 0) {
+                var years = Math.floor(diff / (365 * 24 * 60 * 60 * 1000));
+                diff -= years * (365 * 24 * 60 * 60 * 1000);
+                var days = Math.floor(diff / (24 * 60 * 60 * 1000));
+                diff -= days * (24 * 60 * 60 * 1000);
+                var hours = Math.floor(diff / (60 * 60 * 1000));
+                diff -= hours * (60 * 60 * 1000);
+                var minutes = Math.floor(diff / (60 * 1000));
+                diff -= minutes * (60 * 1000);
+                var seconds = Math.floor(diff / 1000);
+        
+                var countUpString = `${years} years<br>${days} days<br>${hours} hours<br>${minutes} minutes<br>${seconds} seconds`;
+                document.getElementById('countUp').innerHTML = countUpString; // Make sure this uses innerHTML
+            } else {
+                document.getElementById('countUp').innerHTML = "0 years<br>0 days<br>0 hours<br>0 minutes<br>0 seconds";
+            }
+        }
+        
+        // Update the count-up every second
+        setInterval(updateCountUp, 1000);
+        updateCountUp(); // Initialize the count-up clock immediately
+        
+        
+        
+        // Update the time every second
+        setInterval(updateTime, 1000);
+    
+        // Initialize the clock
+        updateTime();
+    </script>
+    
+    
+</body>
+</html>
+
+
+  </div>
+
+  <footer class="post-footer">
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://hyeok-jong.github.io/">Brising</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

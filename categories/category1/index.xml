@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>category1 on Hi there</title>
+    <link>https://hyeok-jong.github.io/categories/category1/</link>
+    <description>Recent content in category1 on Hi there</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 06 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/categories/category1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apps for mac</title>
+      <link>https://hyeok-jong.github.io/posts/app4mac/</link>
+      <pubDate>Wed, 06 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/app4mac/</guid>
+      <description>1. UPDF 2. Magnet 3. typora </description>
+    </item>
+    
+  </channel>
+</rss>

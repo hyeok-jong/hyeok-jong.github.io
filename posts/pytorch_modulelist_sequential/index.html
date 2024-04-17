@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>nn.ModuleList vs nn.Sequential | Hi there</title>
+<meta name="keywords" content="">
+<meta name="description" content="아예 다름
+ss
+class ComplexModel(nn.Module): def __init__(self): super(ComplexModel, self).__init__() self.linears = nn.ModuleList([nn.Linear(10, 10) for _ in range(5)]) def forward(self, x): for linear in self.linears: x = linear(x) &#43; x # 각 계층에 대해 특별한 작업 return x 이거를
+class ComplexModel(nn.Module): def __init__(self): super(ComplexModel, self).__init__() self.linears = [nn.Linear(10, 10) for _ in range(5)] def forward(self, x): for linear in self.linears: x = linear(x) &#43; x # 각 계층에 대해 특별한 작업 return x 이렇게 하면 안됨?">
+<meta name="author" content="">
+<link rel="canonical" href="https://hyeok-jong.github.io/posts/pytorch_modulelist_sequential/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.764ab5ca7c7373fdaea9c4902cda1bc1b68f1223307624201fad737821672d15.css" integrity="sha256-dkq1ynxzc/2uqcSQLNobwbaPEiMwdiQgH61zeCFnLRU=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://hyeok-jong.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://hyeok-jong.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://hyeok-jong.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://hyeok-jong.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://hyeok-jong.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="nn.ModuleList vs nn.Sequential" />
+<meta property="og:description" content="아예 다름
+ss
+class ComplexModel(nn.Module): def __init__(self): super(ComplexModel, self).__init__() self.linears = nn.ModuleList([nn.Linear(10, 10) for _ in range(5)]) def forward(self, x): for linear in self.linears: x = linear(x) &#43; x # 각 계층에 대해 특별한 작업 return x 이거를
+class ComplexModel(nn.Module): def __init__(self): super(ComplexModel, self).__init__() self.linears = [nn.Linear(10, 10) for _ in range(5)] def forward(self, x): for linear in self.linears: x = linear(x) &#43; x # 각 계층에 대해 특별한 작업 return x 이렇게 하면 안됨?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hyeok-jong.github.io/posts/pytorch_modulelist_sequential/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-08-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-08-14T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="nn.ModuleList vs nn.Sequential"/>
+<meta name="twitter:description" content="아예 다름
+ss
+class ComplexModel(nn.Module): def __init__(self): super(ComplexModel, self).__init__() self.linears = nn.ModuleList([nn.Linear(10, 10) for _ in range(5)]) def forward(self, x): for linear in self.linears: x = linear(x) &#43; x # 각 계층에 대해 특별한 작업 return x 이거를
+class ComplexModel(nn.Module): def __init__(self): super(ComplexModel, self).__init__() self.linears = [nn.Linear(10, 10) for _ in range(5)] def forward(self, x): for linear in self.linears: x = linear(x) &#43; x # 각 계층에 대해 특별한 작업 return x 이렇게 하면 안됨?"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://hyeok-jong.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "nn.ModuleList vs nn.Sequential",
+      "item": "https://hyeok-jong.github.io/posts/pytorch_modulelist_sequential/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "nn.ModuleList vs nn.Sequential",
+  "name": "nn.ModuleList vs nn.Sequential",
+  "description": "아예 다름\nss\nclass ComplexModel(nn.Module): def __init__(self): super(ComplexModel, self).__init__() self.linears = nn.ModuleList([nn.Linear(10, 10) for _ in range(5)]) def forward(self, x): for linear in self.linears: x = linear(x) + x # 각 계층에 대해 특별한 작업 return x 이거를\nclass ComplexModel(nn.Module): def __init__(self): super(ComplexModel, self).__init__() self.linears = [nn.Linear(10, 10) for _ in range(5)] def forward(self, x): for linear in self.linears: x = linear(x) + x # 각 계층에 대해 특별한 작업 return x 이렇게 하면 안됨?",
+  "keywords": [
+    
+  ],
+  "articleBody": "아예 다름\nss\nclass ComplexModel(nn.Module): def __init__(self): super(ComplexModel, self).__init__() self.linears = nn.ModuleList([nn.Linear(10, 10) for _ in range(5)]) def forward(self, x): for linear in self.linears: x = linear(x) + x # 각 계층에 대해 특별한 작업 return x 이거를\nclass ComplexModel(nn.Module): def __init__(self): super(ComplexModel, self).__init__() self.linears = [nn.Linear(10, 10) for _ in range(5)] def forward(self, x): for linear in self.linears: x = linear(x) + x # 각 계층에 대해 특별한 작업 return x 이렇게 하면 안됨?\nChatGPT 두 번째 예제에서 self.linears는 일반 파이썬 리스트를 사용하여 생성됩니다. 일반 리스트는 PyTorch의 모듈 시스템과 자동 미분에 직접 통합되지 않으므로, 모델의 파라미터를 올바르게 추적하지 못하게 됩니다.\n즉, 두 번째 예제에서는 self.linears에 있는 선형 계층들의 파라미터가 모델의 파라미터로 등록되지 않으므로, 그라디언트를 계산하거나 최적화할 때 문제가 발생합니다.\n첫 번째 예제에서는 nn.ModuleList를 사용하고 있으므로, 이 계층들은 올바르게 모델에 등록되고, 역전파 및 최적화 중에 올바르게 처리됩니다.\n간단히 말해, 파이토치 모듈 내부에서 일반적인 파이썬 리스트 대신 nn.ModuleList를 사용하는 것이 중요한 이유는, 그렇게 해야 PyTorch가 모델 구조를 올바르게 파악하고, 모델의 모든 파라미터를 올바르게 추적할 수 있기 때문입니다.\n그럼 Squetial은 한번 묶는순간 순서대로 forward가 연결된가는 건가?\nChatGPT 네, 맞습니다. nn.Sequential은 모듈을 순서대로 실행하는 컨테이너로 작동합니다. 이를 사용하면 모듈의 순서가 정의된대로 차례대로 실행되고, 각 단계의 출력이 다음 단계의 입력으로 전달됩니다.\n예를 들어, 다음과 같은 nn.Sequential이 있다고 가정하겠습니다:\npython Copy code my_sequential = nn.Sequential( nn.Linear(10, 20), nn.ReLU(), nn.Linear(20, 5) ) 이 경우, 입력 데이터가 먼저 첫 번째 선형 계층을 통과하고, 그 출력이 ReLU 활성화 함수를 통과하며, 마지막으로 두 번째 선형 계층을 통과합니다.\nnn.Sequential은 계층 간의 연결이 간단하고 직선적인 경우에 유용합니다. 복잡한 연결 구조, 예를 들어 Residual Block과 같은 구조에서는, 각 계층을 명시적으로 호출하거나 nn.ModuleList와 같은 더 유연한 구조를 사용하는 것이 좋을 수 있습니다.\n즉, 첫번째처럼 list 처럼 사용하고 싶으면 ModuleList를 사용해야함, nn.Sequential은 한번 묶이면 끝임.\nnn.ModuleList와 nn.Sequential은 서로 다른 용도로 사용됩니다.\nnn.ModuleList는 그저 모듈의 리스트로, 포함된 모듈들을 순차적으로 적용하는 것이 아니라 원하는 방식으로 조합하거나 순서를 변경할 수 있습니다. 예를 들어, ModuleList(a, b, c, d)에서 a, b, c, d 등의 순서를 바꿔서 forward 연산을 적용할 수 있습니다. nn.Sequential은 포함된 모듈들을 순차적으로 적용하는 연산입니다. Sequential(a, b, c, d)의 경우 항상 a -\u003e b -\u003e c -\u003e d의 순서로 forward 연산을 진행합니다. 따라서 순서를 바꾸거나 특정 조건에 따라 다르게 적용하는 것은 nn.Sequential로는 할 수 없습니다. 따라서, 주어진 예제에서 abcd, adbc, dcab 등의 순서로 forward 연산을 적용하려면 nn.ModuleList를 사용해야 하며, nn.Sequential을 사용하면 그러한 동작을 수행할 수 없습니다.\n",
+  "wordCount" : "379",
+  "inLanguage": "en",
+  "datePublished": "2023-08-14T00:00:00Z",
+  "dateModified": "2023-08-14T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://hyeok-jong.github.io/posts/pytorch_modulelist_sequential/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Hi there",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://hyeok-jong.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<head>
+    
+    <style>
+        .current-time {
+            font-size: 22px;
+            font-weight: bold;
+            color: rgb(194, 190, 178);  
+        }
+    </style>
+</head>
+
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://hyeok-jong.github.io/" accesskey="h" title="Hi there (Alt + H)">Hi there</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+        <div class="current-time" style="font-size: 16px;">
+            <script>
+                document.addEventListener('DOMContentLoaded', (event) => {
+                    const currentTimeElement = document.querySelector('.current-time');
+                    const updateTime = () => {
+                        const now = new Date();
+                        const dayOfWeek = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(now);
+                        const date = now.toISOString().split('T')[0]; 
+                        const time = now.toTimeString().split(' ')[0]; 
+                        currentTimeElement.textContent = `${date}, ${dayOfWeek} ${time}`;
+                    };
+                    setInterval(updateTime, 1000);
+                    updateTime(); 
+                });
+            </script>
+        </div>
+    
+    </nav>
+
+</header>
+<main class="main" >
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      nn.ModuleList vs nn.Sequential
+    </h1>
+    <ul class="post-tags">
+    <div class="post-meta"><span title='2023-08-14 00:00:00 +0000 UTC'>August 14, 2023</span>
+
+</div>
+  </header> 
+  <div class="post-content" ><p>아예 다름</p>
+<p>ss</p>
+<pre tabindex="0"><code>class ComplexModel(nn.Module):
+    def __init__(self):
+        super(ComplexModel, self).__init__()
+        self.linears = nn.ModuleList([nn.Linear(10, 10) for _ in range(5)])
+
+    def forward(self, x):
+        for linear in self.linears:
+            x = linear(x) + x  # 각 계층에 대해 특별한 작업
+        return x
+</code></pre><p>이거를</p>
+<pre tabindex="0"><code>class ComplexModel(nn.Module):
+    def __init__(self):
+        super(ComplexModel, self).__init__()
+        self.linears = [nn.Linear(10, 10) for _ in range(5)]
+
+    def forward(self, x):
+        for linear in self.linears:
+            x = linear(x) + x  # 각 계층에 대해 특별한 작업
+        return x
+</code></pre><p>이렇게 하면 안됨?</p>
+<p>ChatGPT
+두 번째 예제에서 self.linears는 일반 파이썬 리스트를 사용하여 생성됩니다. 일반 리스트는 PyTorch의 모듈 시스템과 자동 미분에 직접 통합되지 않으므로, 모델의 파라미터를 올바르게 추적하지 못하게 됩니다.</p>
+<p>즉, 두 번째 예제에서는 self.linears에 있는 선형 계층들의 파라미터가 모델의 파라미터로 등록되지 않으므로, 그라디언트를 계산하거나 최적화할 때 문제가 발생합니다.</p>
+<p>첫 번째 예제에서는 nn.ModuleList를 사용하고 있으므로, 이 계층들은 올바르게 모델에 등록되고, 역전파 및 최적화 중에 올바르게 처리됩니다.</p>
+<p>간단히 말해, 파이토치 모듈 내부에서 일반적인 파이썬 리스트 대신 nn.ModuleList를 사용하는 것이 중요한 이유는, 그렇게 해야 PyTorch가 모델 구조를 올바르게 파악하고, 모델의 모든 파라미터를 올바르게 추적할 수 있기 때문입니다.</p>
+<p>그럼 Squetial은 한번 묶는순간 순서대로 forward가 연결된가는 건가?</p>
+<p>ChatGPT
+네, 맞습니다. nn.Sequential은 모듈을 순서대로 실행하는 컨테이너로 작동합니다. 이를 사용하면 모듈의 순서가 정의된대로 차례대로 실행되고, 각 단계의 출력이 다음 단계의 입력으로 전달됩니다.</p>
+<p>예를 들어, 다음과 같은 nn.Sequential이 있다고 가정하겠습니다:</p>
+<p>python
+Copy code
+my_sequential = nn.Sequential(
+nn.Linear(10, 20),
+nn.ReLU(),
+nn.Linear(20, 5)
+)
+이 경우, 입력 데이터가 먼저 첫 번째 선형 계층을 통과하고, 그 출력이 ReLU 활성화 함수를 통과하며, 마지막으로 두 번째 선형 계층을 통과합니다.</p>
+<p>nn.Sequential은 계층 간의 연결이 간단하고 직선적인 경우에 유용합니다. 복잡한 연결 구조, 예를 들어 Residual Block과 같은 구조에서는, 각 계층을 명시적으로 호출하거나 nn.ModuleList와 같은 더 유연한 구조를 사용하는 것이 좋을 수 있습니다.</p>
+<p>즉, 첫번째처럼 list 처럼 사용하고 싶으면 ModuleList를 사용해야함,
+nn.Sequential은 한번 묶이면 끝임.</p>
+<p>nn.ModuleList와 nn.Sequential은 서로 다른 용도로 사용됩니다.</p>
+<p>nn.ModuleList는 그저 모듈의 리스트로, 포함된 모듈들을 순차적으로 적용하는 것이 아니라 원하는 방식으로 조합하거나 순서를 변경할 수 있습니다. 예를 들어, ModuleList(a, b, c, d)에서 a, b, c, d 등의 순서를 바꿔서 forward 연산을 적용할 수 있습니다.
+nn.Sequential은 포함된 모듈들을 순차적으로 적용하는 연산입니다. Sequential(a, b, c, d)의 경우 항상 a -&gt; b -&gt; c -&gt; d의 순서로 forward 연산을 진행합니다. 따라서 순서를 바꾸거나 특정 조건에 따라 다르게 적용하는 것은 nn.Sequential로는 할 수 없습니다.
+따라서, 주어진 예제에서 abcd, adbc, dcab 등의 순서로 forward 연산을 적용하려면 nn.ModuleList를 사용해야 하며, nn.Sequential을 사용하면 그러한 동작을 수행할 수 없습니다.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://hyeok-jong.github.io/">Hi there</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Life on Brising</title>
+    <link>https://hyeok-jong.github.io/tags/life/</link>
+    <description>Recent content in Life on Brising</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>APPs for mac</title>
+      <link>https://hyeok-jong.github.io/posts/life/apps/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/life/apps/</guid>
+      <description>Magnet
+Typora
+Karabiner
+https://ke-complex-modifications.pqrs.org/?q=hjkl https://ke-complex-modifications.pqrs.org/#left_option_plus_hjkl_to_arrows
+https://apple.stackexchange.com/questions/443992/using-cmdh-j-k-l-as-arrows-in-macos
+Left ctrl + hjkl
+{ &amp;#34;description&amp;#34;: &amp;#34;Left ctrl + hjkl to arrow keys Vim&amp;#34;, &amp;#34;manipulators&amp;#34;: [ { &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;h&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [ &amp;#34;left_control&amp;#34; ], &amp;#34;optional&amp;#34;: [ &amp;#34;any&amp;#34; ] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;left_arrow&amp;#34; } ], &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34; }, { &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;j&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [ &amp;#34;left_control&amp;#34; ], &amp;#34;optional&amp;#34;: [ &amp;#34;any&amp;#34; ] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;down_arrow&amp;#34; } ], &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34; }, { &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;k&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [ &amp;#34;left_control&amp;#34; ], &amp;#34;optional&amp;#34;: [ &amp;#34;any&amp;#34; ] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;up_arrow&amp;#34; } ], &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34; }, { &amp;#34;from&amp;#34;: { &amp;#34;key_code&amp;#34;: &amp;#34;l&amp;#34;, &amp;#34;modifiers&amp;#34;: { &amp;#34;mandatory&amp;#34;: [ &amp;#34;left_control&amp;#34; ], &amp;#34;optional&amp;#34;: [ &amp;#34;any&amp;#34; ] } }, &amp;#34;to&amp;#34;: [ { &amp;#34;key_code&amp;#34;: &amp;#34;right_arrow&amp;#34; } ], &amp;#34;type&amp;#34;: &amp;#34;basic&amp;#34; } ] } Left option + hjkl</description>
+    </item>
+    
+    <item>
+      <title>Devices</title>
+      <link>https://hyeok-jong.github.io/posts/life/devices/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/life/devices/</guid>
+      <description>iPhone ~ 2022.02.16 : XR 2022.02.17 ~ : iPhone 13, 128GB iPad 2022.03.16 ~ : iPad Pro, Wi-Fi, 12.9inch, Space Gray, 128GB, M1, Startlight
+AppleCare+ ~ 2024.03.15 Mac 2022.07.06 ~ : MacBook Air, M1, 13inch, 8-Core CPU, 7-Core GPU, 8GB Unified Memory, 256GB SSD Storage, Space Gray
+AppleCare+ ~ 2025.07.05 2023.12.06 ~ : Mac mini, M2, 8-Core CPU, 10-Core GPU, 8GB Unified Memory, 256GB SSD Storage AirPods ~ 2022.12.01 : AirPods, 2nd Generation 2022.</description>
+    </item>
+    
+    <item>
+      <title>Subscriptions</title>
+      <link>https://hyeok-jong.github.io/posts/life/subscriptions/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/life/subscriptions/</guid>
+      <description>YouTube
+Netflix
+ChatGPT
+Notability
+UPDF
+iCloud 200GB
+KAKAO Talk 서랍 플러스
+Coupang</description>
+    </item>
+    
+    <item>
+      <title>Notion</title>
+      <link>https://hyeok-jong.github.io/posts/life/notion/</link>
+      <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/life/notion/</guid>
+      <description>일정 관리를 위해 Ipad note app을 사용했었고, ClickUp으로 갈아타려 했으나 유료이슈가 있어 결국 다시 Notion을 돌아옴.
+ClickUp은 완전하게 Project management with co-workers로 디자인 되어 있는데 지금 생각해보면 완전하게 노션과 같은 구조임.
+그래서 ClickUp 한 이틀 보면서 database / view를 이해하게 되었고 추가로 Project management를 어떻게 하면 될지에 대한 개념도 얻음.
+못써서 아쉽긴 한데 나름 도움이 되었음.
+1. 무엇이 필요한가? 무엇이 필요한지 그리고 얼마나 기록할 것이지 둘다 중요함.
+우선 필요한 것들은 : To do list, Daily summary, Project / Research management 정도임.</description>
+    </item>
+    
+    <item>
+      <title>ClickUp</title>
+      <link>https://hyeok-jong.github.io/posts/life/clickup/</link>
+      <pubDate>Sat, 20 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/life/clickup/</guid>
+      <description>Manage schedules, projects, tasks&amp;hellip;. are very difficult.
+That&amp;rsquo;s why numerous apps exist.
+First, I used noteapp with my custom templets.
+However, the method have critical disadvantage because the noteapp are optimized with handwriting so that I can edit it only with IPad.
+Thus I moved to notion.
+But notion also was not the best option for me.
+Currently I use ClickUp.
+I agree with ClickUp is not designed for schedule management but project management with co-workers.</description>
+    </item>
+    
+    <item>
+      <title>계약</title>
+      <link>https://hyeok-jong.github.io/posts/life/estate/</link>
+      <pubDate>Wed, 20 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/life/estate/</guid>
+      <description>1. 등기사항전부 증명서 (등기부등본) 참고 영상
+표제부 - 집 주에 대한 정보 갑구 - 소자 대한 정보 을구 - 소유권 이외 주요정보 How to check 열람일시 표제부의 주소 == 계약서 주소 갑구의 임대인 인적사항 == 계약서 인적사항 == 신분증 == 계좌주인 If one of [가압류, 압류, 가등기, 가처분] is in 갑구 =&amp;gt; X 을구 - 근저당권 : 해당 집을 담보로 대출 받은 사항 (채권최고액 == 대출금액, 당연히 적을수록 좋음) 임차권등기명령 is in 을구 =&amp;gt; X 2.</description>
+    </item>
+    
+    <item>
+      <title>Youtube recommendations (Musics)</title>
+      <link>https://hyeok-jong.github.io/posts/life/youtube/</link>
+      <pubDate>Sat, 29 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/life/youtube/</guid>
+      <description>1. Channels Marchen
+Comfort Yourself.
+my blue valentine
+All was well
+Blue rain_ambience music
+by the way
+essential;
+hello, sunset
+Loo Piano
+Violet fizz
+Classical Masterpieces
+TOBI
+Mood Is Jazz
+TAKE A LOOK
+LEEPLAY
+2.Videos Studio Ghibli Animation OST
+Ghibli Piano OST collection
+Niccolo Paganini&amp;rsquo;s Playlist
+Gregorian Chants</description>
+    </item>
+    
+  </channel>
+</rss>
