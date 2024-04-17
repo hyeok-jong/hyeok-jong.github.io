@@ -349,7 +349,7 @@
 
 
         function updateCountUp() {
-            var startTime = new Date('2024-04-17T11:00:00'); // Check that the date is correctly formatted
+            var startTime = new Date('2024-04-17T16:00:00'); // Check that the date is correctly formatted
             var now = new Date(); // Current time
             var diff = now - startTime; // Difference in milliseconds
         
@@ -364,7 +364,7 @@
                 diff -= minutes * (60 * 1000);
                 var seconds = Math.floor(diff / 1000);
         
-                var countUpString = `${years} years<br>${days} days<br>${hours} hours<br>${minutes} minutes<br>${seconds} seconds`;
+                var countUpString = `Quit Smoking <br>${years} years<br>${days} days<br>${hours} hours<br>${minutes} minutes<br>${seconds} seconds`;
                 document.getElementById('countUp').innerHTML = countUpString; // Make sure this uses innerHTML
             } else {
                 document.getElementById('countUp').innerHTML = "0 years<br>0 days<br>0 hours<br>0 minutes<br>0 seconds";
