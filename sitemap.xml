@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hyeok-jong.github.io/posts/dl/few_shot/</loc>
+    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hyeok-jong.github.io/tags/dl/</loc>
+    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hyeok-jong.github.io/posts/</loc>
+    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hyeok-jong.github.io/tags/study/</loc>
+    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hyeok-jong.github.io/tags/</loc>
+    <lastmod>2024-05-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://hyeok-jong.github.io/tags/apple/</loc>
     <lastmod>2024-01-26T00:00:00+00:00</lastmod>
   </url><url>
@@ -14,13 +29,7 @@
     <loc>https://hyeok-jong.github.io/tags/life/</loc>
     <lastmod>2024-01-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://hyeok-jong.github.io/posts/</loc>
-    <lastmod>2024-01-26T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://hyeok-jong.github.io/posts/life/subscriptions/</loc>
-    <lastmod>2024-01-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://hyeok-jong.github.io/tags/</loc>
     <lastmod>2024-01-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://hyeok-jong.github.io/base/</loc>
