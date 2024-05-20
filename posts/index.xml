@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Brising</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog recommendations</title>
+      <link>https://hyeok-jong.github.io/posts/dl/few_shot/</link>
+      <pubDate>Sat, 18 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/dl/few_shot/</guid>
+      <description>ZSL : link link
+FSL : link</description>
+    </item>
+    
     <item>
       <title>APPs for mac</title>
       <link>https://hyeok-jong.github.io/posts/life/apps/</link>

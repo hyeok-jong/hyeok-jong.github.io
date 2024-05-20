@@ -358,9 +358,9 @@
 
 
         function updateCountUp() {
-            var startTime = new Date('2024-05-08T19:00:00'); // Check that the date is correctly formatted
+            var startTime = new Date('2024-07-04T17:00:00'); // Check that the date is correctly formatted
             var now = new Date(); // Current time
-            var diff = now - startTime; // Difference in milliseconds
+            var diff = startTime - now; // Difference in milliseconds
         
             if (diff > 0) {
                 var years = Math.floor(diff / (365 * 24 * 60 * 60 * 1000));
