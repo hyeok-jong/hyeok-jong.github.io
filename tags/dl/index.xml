@@ -6,7 +6,31 @@
     <description>Recent content in DL on Brising</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 18 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/tags/dl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://hyeok-jong.github.io/tags/dl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Encoding</title>
+      <link>https://hyeok-jong.github.io/posts/dl/encoding/</link>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://hyeok-jong.github.io/posts/dl/encoding/</guid>
+      <description>Categorical vs One-hot vs Dummy
+e.g) 노랑, 파랑, 초록
+Categorical 노랑 = 0
+파랑 = 1
+초록 = 2
+One-hot
+노랑 = [1,0,0]
+파랑 = [0,1,0]
+초록 = [0,0,1]
+Dummy
+노랑 = [0,0]
+파랑 = [1,0]
+초록 = [0,1]
+Categorical를 갖고 regression등을 fitting하면 각 카테고리마다 위상이 있다는 거니까 One-hot 으로 바꿔서 서로 다르다는 정보만 줘야함.
+(nlp에서의 one-hot encoding 그거 맞음).
+근데, logsitic등에서 그렇게 하면 문제는 data matrix X의 inverse 가 존재하지 않아서 fitting이 안됨.</description>
+    </item>
+    
     <item>
       <title>Blog recommendations</title>
       <link>https://hyeok-jong.github.io/posts/dl/few_shot/</link>
