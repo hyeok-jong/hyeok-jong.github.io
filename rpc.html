@@ -342,9 +342,10 @@
                     .innerHTML = `You     
                     <img src="./images/${userChoose.toLowerCase()}-emoji.png" class="move-icon-small">
                     VS
-                    <img src="./images/${computerResult}-emoji.png" class="move-icon-small">
+                    <img src="./images/${computerResult.toLowerCase()}-emoji.png" class="move-icon-small">
                     Computer
                     `;
+                    console.log(userChoose);
             
                 // alert(`You choose ${userChoose} and computer choose ${computerResult} so ${userResult} \n And total results are ${JSON.stringify(scoreObject)}`)
             }
