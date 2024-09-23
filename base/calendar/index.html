@@ -243,23 +243,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.2.0/sha256.js"></script>
     <script>
         const element = document.getElementById('calendar');
-        
+    
+        function getParameterByName(name, url = window.location.href) {
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+    
         function checkPassword() {
-            var password = prompt("Enter the password:");
+            var hash = getParameterByName('hash');
             
+            if (hash === "4dd10795ab0d8a1e5eda933693ccfab809818f560af8461423e92208fa1ba466") {
+                element.style.display = 'block';
+                alert('password vefied via url.')
+                return;
+            }
+    
+            var password = prompt("Enter the password:");
             var shaObj = new jsSHA("SHA-256", "TEXT");
             shaObj.update(password);
-            var hash = shaObj.getHash("HEX");
+            var inputHash = shaObj.getHash("HEX");
     
-            var correctHash = "4dd10795ab0d8a1e5eda933693ccfab809818f560af8461423e92208fa1ba466"; // 'asdf'의 SHA-256 해시값
-            console.log(hash);
-            
-            if (hash === correctHash) {
-                // 비밀번호가 맞으면 calendar를 보여줌
+            var correctHash = "4dd10795ab0d8a1e5eda933693ccfab809818f560af8461423e92208fa1ba466"; 
+            console.log(inputHash);
+    
+            if (inputHash === correctHash) {
                 element.style.display = 'block';
             } else {
                 alert("Incorrect password!");
-                window.location.href = "https://hyeok-jong.github.io"; // 비밀번호가 틀리면 리다이렉트
+                window.location.href = "https://hyeok-jong.github.io"; 
             }
         }
     </script>
